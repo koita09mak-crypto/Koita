@@ -31,15 +31,16 @@ Une application Telegram avec un assistant IA qui tourne 24h/24 pour ton entrepr
 
 ---
 
-## ÉTAPE 2 — Compte Anthropic Claude (clé API)
+## ÉTAPE 2 — Clé API Google Gemini (100% gratuit)
 
-1. Va sur **console.anthropic.com**
-2. Crée un compte gratuit
-3. Va dans "API Keys" → "Create Key"
-4. Copie la clé (commence par `sk-ant-...`)
+1. Va sur **aistudio.google.com**
+2. Connecte-toi avec un compte Google (Gmail suffit)
+3. Clique sur "Get API Key" → "Create API key"
+4. Copie la clé
 
-**Coût réel :** ~$0.01 à $0.05 par conversation.
-Pour un usage quotidien normal : moins de $5/mois.
+**Coût réel : 0€**
+Le quota gratuit est de 1 500 requêtes/jour et 1 million de tokens/jour.
+Pour un usage quotidien solo en entreprise : largement suffisant, aucune limite atteinte.
 
 ---
 
@@ -168,8 +169,8 @@ bot/
 |---------|------|
 | Telegram bot | Gratuit |
 | Railway (hébergement) | Gratuit (500h/mois) |
-| Claude API (usage normal) | ~$3-8/mois |
-| **Total** | **~3-8€/mois** |
+| Google Gemini API | Gratuit |
+| **Total** | **0€/mois** |
 
 ---
 

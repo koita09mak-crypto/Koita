@@ -1,7 +1,8 @@
-import anthropic
-from config import ANTHROPIC_API_KEY, BUSINESS
+import google.generativeai as genai
+from config import GEMINI_API_KEY, BUSINESS
 
-client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+genai.configure(api_key=GEMINI_API_KEY)
+_model = genai.GenerativeModel("gemini-1.5-flash")
 
 SYSTEM_PROMPT = f"""Tu es l'assistant IA personnel d'Adama Koita, gérant de {BUSINESS['nom']}.
 
@@ -36,19 +37,23 @@ IMPORTANT :
 """
 
 
+def _ask(prompt: str) -> str:
+    response = _model.generate_content(SYSTEM_PROMPT + "\n\n" + prompt)
+    return response.text
+
+
 def chat(messages: list, user_message: str) -> str:
+    historique = []
+    for msg in messages:
+        role = "user" if msg["role"] == "user" else "model"
+        historique.append({"role": role, "parts": [msg["content"]]})
+
+    session = _model.start_chat(history=historique)
+    response = session.send_message(SYSTEM_PROMPT + "\n\n" + user_message if not historique else user_message)
+
     messages.append({"role": "user", "content": user_message})
-
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=2048,
-        system=SYSTEM_PROMPT,
-        messages=messages,
-    )
-
-    assistant_reply = response.content[0].text
-    messages.append({"role": "assistant", "content": assistant_reply})
-    return assistant_reply
+    messages.append({"role": "assistant", "content": response.text})
+    return response.text
 
 
 def generate_devis(client_nom: str, description: str, adresse: str = "") -> str:
@@ -68,14 +73,7 @@ Le devis doit inclure :
 7. Mention assurance RC Pro
 
 Formate le devis de façon claire et professionnelle."""
-
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=2048,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.content[0].text
+    return _ask(prompt)
 
 
 def analyser_situation(stats: dict) -> str:
@@ -91,11 +89,4 @@ Données actuelles :
 
 Donne un diagnostic en 3 points et une action prioritaire immédiate.
 Sois direct et concret, pas de généralités."""
-
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=1024,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.content[0].text
+    return _ask(prompt)

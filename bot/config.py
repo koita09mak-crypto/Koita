@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 OWNER_TELEGRAM_ID = os.getenv("OWNER_TELEGRAM_ID")  # Ton ID Telegram perso
 
 BUSINESS = {
