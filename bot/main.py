@@ -14,6 +14,9 @@ from telegram.ext import (
     filters,
 )
 from config import TELEGRAM_TOKEN, OWNER_TELEGRAM_ID
+from handlers.agent_handler import (
+    show_agents_menu, agent_selected, handle_agent_message, agents_command
+)
 from handlers.conversations import (
     start, dashboard, assistant_start, assistant_message, stop,
     devis_start, devis_client, devis_description, devis_adresse,
@@ -108,6 +111,7 @@ def main():
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stop", stop))
+    app.add_handler(CommandHandler("agents", agents_command))
     app.add_handler(conv_devis)
     app.add_handler(conv_client)
     app.add_handler(conv_search)
@@ -116,6 +120,8 @@ def main():
     app.add_handler(conv_planning)
 
     app.add_handler(CallbackQueryHandler(start, pattern="^menu_principal$"))
+    app.add_handler(CallbackQueryHandler(show_agents_menu, pattern="^menu_agents$"))
+    app.add_handler(CallbackQueryHandler(agent_selected, pattern="^agent:"))
     app.add_handler(CallbackQueryHandler(dashboard, pattern="^menu_dashboard$"))
     app.add_handler(CallbackQueryHandler(assistant_start, pattern="^menu_assistant$"))
     app.add_handler(CallbackQueryHandler(lambda u, c: show_menu_devis(u, c), pattern="^menu_devis$"))
@@ -127,7 +133,12 @@ def main():
     app.add_handler(CallbackQueryHandler(planning_semaine, pattern="^planning_semaine$"))
     app.add_handler(CallbackQueryHandler(planning_mois, pattern="^planning_mois$"))
 
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, assistant_message))
+    async def smart_message_router(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+        handled = await handle_agent_message(update, ctx)
+        if not handled:
+            await assistant_message(update, ctx)
+
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, smart_message_router))
 
     logging.info("AK Réseaux & Bâtiment — Bot démarré")
     app.run_polling()

@@ -14,6 +14,9 @@ MENU_PRINCIPAL = InlineKeyboardMarkup([
         InlineKeyboardButton("📊 Tableau de bord", callback_data="menu_dashboard"),
         InlineKeyboardButton("🤖 Assistant IA", callback_data="menu_assistant"),
     ],
+    [
+        InlineKeyboardButton("🧠 Mes 11 Agents IA", callback_data="menu_agents"),
+    ],
 ])
 
 MENU_DEVIS = InlineKeyboardMarkup([
