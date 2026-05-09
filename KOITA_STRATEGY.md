@@ -110,6 +110,11 @@ AOF :
 - [x] Marchés : France + Afrique de l'Ouest (double positionnement)
 - [x] Stratégie : Axes D (terrain + spécialisation + digital en parallèle)
 - [x] Priorité immédiate : ACRE avant immatriculation
+- [x] Nom commercial : **AK Réseaux & Bâtiment**
+- [x] Forme juridique : Micro-entreprise (auto-entrepreneur)
+- [x] Code NAF : 4321A (Travaux d'installation électrique dans tous locaux)
+- [x] Stratégie assurance : RC Pro seule en Phase 1 (courants faibles) → ajouter décennale Phase 2
+- [x] Multi-activités dès le départ (câblage, réseaux, alarme, assistance technique, digital)
 
 ---
 
@@ -141,6 +146,8 @@ AOF :
 - Date de fin de formation Objectif La Solive ?
 - Région exacte en France ?
 - Certifications déjà obtenues (habilitation élec, etc.) ?
+- Exemption stage CMA possible ? (expérience terrain à justifier)
+- Disponibilité du nom de domaine ak-reseaux-batiment.fr ou akbtp.fr ?
 
 ---
 
@@ -152,3 +159,7 @@ AOF :
 - Construction du plan 3 phases
 - Identification des risques prioritaires
 - Création du système de mémoire stratégique (ce fichier + CLAUDE.md)
+- Choix du nom commercial : AK Réseaux & Bâtiment
+- Choix forme juridique : micro-entreprise, code NAF 4321A
+- Stratégie assurance séquencée (RC Pro seule → décennale Phase 2)
+- Création fichier ENTREPRISE_SETUP.md (configuration complète, checklist, modèle facture, tarifs)
