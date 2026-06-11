@@ -59,6 +59,25 @@ Le **même produit**, mais **deux réalités de prix et de paiement** :
 
 ---
 
+## 4 bis. Grille de prix recommandée *(proposée par le consultant — à valider/ajuster par Adama)*
+
+> Logique : **accessible** (challenger sous les concurrents FR ~29-39 €/mois) + **adaptée à l'AOF** (mobile money, pouvoir d'achat — on n'applique PAS le prix français converti). Prix simples et prévisibles.
+
+| Palier | France 🇫🇷 | Afrique de l'Ouest 🌍 | Contenu |
+|---|---|---|---|
+| **Découverte** | Gratuit | Gratuit | 3 devis + 3 factures/mois · 5 clients · agents basiques · 1 user |
+| **Pro** | **19 €/mois** (ou 190 €/an) | **5 000 FCFA/mois** (ou 50 000/an) | Tout illimité · tous les agents · 1 user |
+| **Équipe** | **49 €/mois** (ou 490 €/an) | **12 000 FCFA/mois** (ou 120 000/an) | Jusqu'à 5 users · partage/rôles · rapports avancés |
+
+- **Essai** : 14 jours Pro complet à l'inscription → retour au gratuit si pas d'abonnement.
+- **Annuel** : 2 mois offerts (encaisse d'avance + fidélise).
+- **Lancement** : « Membres fondateurs » — prix réduit garanti pour les 100 premiers (amorce + bouche-à-oreille).
+- **Paiement** : France → Stripe (carte/SEPA) · AOF → mobile money (Wave + Orange Money via agrégateur PayDunya/CinetPay) — **commission, pas d'abonnement** (compatible budget 200 €).
+
+**À confirmer par Adama** : (1) limites exactes du gratuit (3 ou 5 devis ?) · (2) prix Pro (19 / 24 / 15 ?) · (3) mobile money prioritaire (Wave ?).
+
+---
+
 ## 5. Ordre de construction (structurer d'abord)
 
 1. **Décider** les paliers + prix + limites (section 4) — *toi*.
