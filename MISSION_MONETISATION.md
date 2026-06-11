@@ -78,6 +78,22 @@ Le **même produit**, mais **deux réalités de prix et de paiement** :
 
 ---
 
+## 4 ter. Contrôle des coûts IA — protéger la marge ⚠️
+
+**Risque identifié (Adama, 2026-06-11)** : si l'IA coûte plus cher que le prix payé, on perd de l'argent — critique avec un budget de 200 €.
+
+**Réalité** : une action IA avec un petit modèle = fraction de centime à ~2 cts. Un user actif ≈ **1-3 €/mois** de coût IA → marge confortable sous un Pro à 19 €.
+
+**Les 4 protections (par design) :**
+1. **Petit modèle économique** (type Haiku) pour le routinier ; gros modèle réservé au critique.
+2. **Agents "repère" = règles côté client (sans LLM) → coût ZÉRO** → peuvent rester sur le gratuit.
+3. **IA générative (coûteuse) = derrière le paywall (Pro+)** → le coût suit le revenu.
+4. **Limites fair-use par palier + plafond serré sur le GRATUIT** (les users gratuits = pure dépense).
+
+**Règle** : le coût IA d'un user doit toujours rester **sous son prix**. À prouver avant de coder (chiffrage par palier).
+
+---
+
 ## 5. Ordre de construction (structurer d'abord)
 
 1. **Décider** les paliers + prix + limites (section 4) — *toi*.
