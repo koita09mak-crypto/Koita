@@ -73,6 +73,21 @@ Chaque écran livré doit cocher **toutes** ces cases. C'est ça, le niveau Appl
 - Même composant = même apparence **partout** (boutons, cards, badges, formulaires).
 - Mutualise : un module **importe** le socle, il ne recrée pas un bouton/une card maison.
 
+## 3 bis. MULTI-PLATEFORME — 1 noyau, plusieurs façades (toutes les portes d'Internet)
+
+Principe : l'app est UNE codebase / UN noyau. Les plateformes ne sont que des PORTES d'entrée
+vers le même cerveau (Supabase + IA-agents + paiement). On peut entrer par n'importe quel moyen
+sur Internet, **sans jamais dupliquer la logique métier**.
+
+- Toutes les façades lisent/écrivent le **MÊME Supabase**. Aucune logique recodée par plateforme.
+- **Web** : déjà en place (React sur Vercel).
+- **Mobile (Android/iPhone)** : rendre l'app installable en **PWA** — manifest (nom, icônes, thème),
+  service worker (cache offline léger), plein écran. **NE PAS créer d'app native séparée.**
+- **Bots / canaux** (Discord, Telegram, WhatsApp…) : chaque canal **consomme le noyau** via Supabase /
+  une couche API ; il ne réimplémente rien. Garder l'accès « canal » **extensible** : ajouter une porte
+  = brancher une nouvelle façade, jamais réécrire le noyau.
+- **Responsive** vérifié sur 3 tailles : téléphone (360px), tablette, desktop. Mobile = priorité.
+
 ## 4. Périmètre à finir (d'après l'audit du module BTP)
 
 - **Compléter les manques réels** : rapport d'intervention PDF, simulateur de taux horaire,

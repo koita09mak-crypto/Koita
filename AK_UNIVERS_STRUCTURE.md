@@ -51,7 +51,7 @@ On ne conçoit pas en « fonctionnalités ». On conçoit autour de **personnes 
 
 ## 4. Règle d'architecture : SOCLE vs VERTICAL
 
-**Séparation légère, pas de sur-ingénierie** (budget réel : contraint, équipe : Adama seul).
+**Séparation légère, pas de sur-ingénierie** — Adama est seul à porter et maintenir le projet : on garde simple pour qu'il en **garde le contrôle** (ce n'est pas une question d'argent, mais de maîtrise).
 
 ### NOYAU / SOCLE (construit UNE fois, partagé par tous les modules)
 - **Compte / identité** utilisateur
@@ -75,7 +75,31 @@ On ne conçoit pas en « fonctionnalités ». On conçoit autour de **personnes 
 
 ---
 
-## 5. Ordre de lancement (réaliste avec petit budget)
+## 4 bis. Les façades — toutes les portes d'Internet
+
+On ne fait **PAS** trois applications séparées. **Un seul noyau, plusieurs façades** : on peut entrer
+par n'importe quelle porte d'Internet, et tout pointe vers le même cerveau (Supabase + IA + paiement).
+Une donnée saisie sur le téléphone apparaît sur le web et dans le bot — **un seul endroit à maintenir.**
+
+```
+              NOYAU  (Supabase · IA-agents · paiement · socle)
+                    ▲             ▲              ▲
+                 ┌──┴──┐     ┌────┴────┐    ┌────┴────┐
+                 │ WEB │     │ MOBILE  │    │  BOTS   │
+                 │navig│     │PWA/Andr.│    │ canaux  │
+                 └─────┘     └─────────┘    └─────────┘
+```
+
+- **Web** : déjà en place (React sur Vercel).
+- **Mobile (Android / iPhone)** : l'app web rendue **installable en PWA** — une seule codebase,
+  pas d'app native séparée.
+- **Bots / canaux** (Discord, Telegram, WhatsApp…) : chaque canal **consomme le noyau** via Supabase /
+  une couche API. Le `replit_bot.py` est la première façade-bot.
+- **Loi** : ajouter une nouvelle porte d'entrée ne doit **jamais** obliger à toucher la logique métier du noyau.
+
+---
+
+## 5. Ordre de lancement (focalisé : un module à la fois)
 
 Comme Amazon a démarré **aux livres uniquement** avant de tout vendre, et l'iPhone avec une poignée de fonctions :
 
@@ -105,6 +129,7 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
 - L'IA est un **moteur qui agit**, pas un chatbot. *(2026-06-11)*
+- Multi-plateforme = **1 noyau, plusieurs façades** (Web · Mobile/PWA · Bots). Aucune logique dupliquée par plateforme. *(2026-06-11)*
 - Méthode obligatoire : **audit d'abord** (Phase 0) avant toute création. *(2026-06-11)*
 
 ## 8. Questions ouvertes
