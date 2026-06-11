@@ -8,9 +8,24 @@
 
 ## 1. La vision en une phrase
 
-**AK Univers est une plateforme propulsée par l'IA qui accompagne chaque personne dans sa vraie vie professionnelle — quel que soit son métier — en réunissant au même endroit le travail, l'argent, la formation, le droit et la diaspora.**
+> ### ⭐ Promesse n°1 (north star)
+> **Tout ce qui est répétitif, long ou compliqué dans ta journée, AK le simplifie ou le fait à ta place — et t'apprend ce que tu ne maîtrises pas — pour que tu puisses entreprendre et créer sans être bloqué par le manque de temps ou de connaissances.**
+>
+> Version courte : **« Le difficile, le répétitif, l'inconnu — AK s'en occupe, pour que toi tu avances. »**
 
-L'IA n'y est pas un chatbot. C'est un **moteur qui travaille à la place de l'utilisateur** : elle génère le devis, anime la formation, trie les offres d'emploi, relance les clients.
+Cette promesse **unifie tout** (et tue l'effet « dashboard générique ») :
+- les **agents** font le répétitif à ta place,
+- la **formation** comble le manque de connaissances,
+- les **modules** (entreprise, création, IA) débloquent l'envie d'entreprendre.
+
+Tout sert **un seul but : faciliter** (l'esprit Apple « it just works »).
+
+AK Univers est une plateforme propulsée par l'IA qui accompagne chaque personne dans sa vraie vie
+professionnelle — quel que soit son métier — en réunissant au même endroit le travail, l'argent,
+la formation, le droit et la diaspora.
+
+L'IA n'y est pas un chatbot. C'est un **moteur qui travaille à la place de l'utilisateur** : elle
+génère le devis, anime la formation, trie les offres d'emploi, relance les clients.
 
 ---
 
@@ -125,6 +140,7 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
 
 ## 7. Décisions actées
 
+- **Promesse n°1 (north star)** : AK **facilite** — il fait le répétitif/difficile à ta place et comble le manque de connaissances. L'accueil et la navigation se construisent autour de ça. *(2026-06-11)*
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
