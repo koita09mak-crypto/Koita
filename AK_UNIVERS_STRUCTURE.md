@@ -155,7 +155,14 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
      - 🟠 ✅ **CORRIGÉ (2026-06-11)** — TTC faux à l'écran. CA/KPI/liste factures calculent maintenant le TTC par ligne comme le PDF (4 surfaces = 4 937 € sur le cas multi-taux). Compte de test purgé après vérif (prod propre).
      - 🟠 ✅ **CORRIGÉ (2026-06-11)** — Friction inscription : accès immédiat (<30 s, sans cliquer de mail) + confirmation différée (bandeau « confirme ton adresse » non-bloquant, vérif conservée). **Prouvé** (parcours Sara Test). Activations optionnelles côté Adama : `RESEND_API_KEY` (envoi réel des emails) + Supabase Auth « Confirm email » OFF.
      - 🔵 Mineur : téléphone non capté à l'onboarding, seed clients démo inexploitable.
-  5. **Structurer la base Supabase** (le test a prouvé qu'il y a de la dérive de schéma → audit DB complet). ← après les 2 fixes
+  5. ✅ **AUDIT FAIT (2026-06-11) — base Supabase** (lecture seule via MCP, écrit dans `docs/DB_SCHEMA.md`). 78 tables · 100% RLS · 12 avec données.
+     - 🟢 **Sécurité solide** : RLS partout avec `WITH CHECK (auth.uid()=user_id)` → **zéro usurpation** ; dérives historiques (clients/candidatures) corrigées.
+     - 🔴 **Dettes à traiter PAR LOTS** (jamais un gros refactor) :
+       - **Lot 1 (sûr) — intégrité + sécurité** : FK manquantes (chantiers.client_id, devis.facture_id, *.user_id) + fix `search_path` de `ak_auto_confirm_email` + policy `mentions_legales` + pg_net hors public. ← **À FAIRE**
+       - **Lot 2 — nettoyage** : 78 tables / 12 utilisées → supprimer/fusionner doublons (abonnements vs subscriptions, 3 systèmes de progression, formations_perso/suivies) APRÈS vérif zéro usage code. Cible ~35.
+       - **Lot 3 — FR/AOF** : 10 tables en timestamp naïf → `timestamptz` (sinon bugs de fuseau France/Afrique de l'Ouest — concerne directement le double marché).
+       - **Décision produit ouverte** : partage org/coéquipier (RLS asymétrique) — veut-on le travail en équipe ? Si artisans solos → ne pas y toucher.
+     - **Cible** : NOYAU (~35 : identité, monétisation, IA, communauté, contenu ak_*, juridique) ⇄ MODULES par portail (Activité/BTP, Finances, Emploi, Formation, Créateur…).
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
