@@ -92,6 +92,15 @@ Le **même produit**, mais **deux réalités de prix et de paiement** :
 
 **Règle** : le coût IA d'un user doit toujours rester **sous son prix**. À prouver avant de coder (chiffrage par palier).
 
+### ✅ Marge PROUVÉE (audit agent, 2026-06-11, sur vrais chiffres)
+- Prix API Claude réels + plans existants de l'app (Free / Pro 29 € / Business 79 € / Enterprise 299 €) + quotas (Free 5k / Pro 50k / Business 200k / Enterprise ~1M tokens/mois).
+- **Pire cas (quota 100 % consommé sur Opus, le + cher)** : Pro coûte **0,55 €** d'IA pour 29 € → **marge 98 %** (96 % en FCFA). Business 2,21 € → 97 %. **Le coût IA est ~50× sous le prix.**
+- Protections **déjà en place** : quota + plafond serveur (bloque avant l'appel) + `max_tokens=1024` + agents « repère » en règles (0 LLM).
+- **⚠️ Seul vrai risque** : comptage de tokens « best-effort » → si l'incrément échoue, un user peut dépasser sans être décompté. **À blinder en priorité** (fiabiliser le comptage).
+- **🔧 Levier** : défaut = Opus (cher) partout → router le routinier vers **Haiku** (5× moins cher).
+- **💡 Opportunité** : quotas trop chiches (~21 actions/mois sur Pro) → quadruplables en restant à 92 % de marge → meilleure UX/rétention. Le frein n'est pas le coût.
+- *Décision prix ouverte* : garder 29 €/79 €/299 € (codé) ou adopter 19 €/49 € (plus agressif). Les deux ultra-rentables.
+
 ---
 
 ## 5. Ordre de construction (structurer d'abord)
