@@ -153,7 +153,7 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
   4. ✅ **FAIT (2026-06-11) — Grand test bout-en-bout sur du RÉEL** (compte test en prod). PDF devis + facture **validés de visu** : accents OK, totaux justes (devis 4 937 €), facture conforme (émetteur / facturé à / référence devis / conditions légales). Le test a révélé des bugs réels que l'audit code avait ratés → **preuve que tester sur du réel est indispensable** :
      - 🔴 ✅ **CORRIGÉ (2026-06-11)** — création de client cassée (dérive de schéma). Table `clients` migrée au bon schéma + Clients.jsx aligné. **Prouvé via l'UI** (création/recherche/édition d'un vrai client, is_demo=false).
      - 🟠 ✅ **CORRIGÉ (2026-06-11)** — TTC faux à l'écran. CA/KPI/liste factures calculent maintenant le TTC par ligne comme le PDF (4 surfaces = 4 937 € sur le cas multi-taux). Compte de test purgé après vérif (prod propre).
-     - 🟠 Friction inscription (confirmation email obligatoire) → tue l'« essai en 30 s ». **EN COURS** : accès immédiat + confirmation différée (ne pas supprimer la vérif).
+     - 🟠 ✅ **CORRIGÉ (2026-06-11)** — Friction inscription : accès immédiat (<30 s, sans cliquer de mail) + confirmation différée (bandeau « confirme ton adresse » non-bloquant, vérif conservée). **Prouvé** (parcours Sara Test). Activations optionnelles côté Adama : `RESEND_API_KEY` (envoi réel des emails) + Supabase Auth « Confirm email » OFF.
      - 🔵 Mineur : téléphone non capté à l'onboarding, seed clients démo inexploitable.
   5. **Structurer la base Supabase** (le test a prouvé qu'il y a de la dérive de schéma → audit DB complet). ← après les 2 fixes
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
