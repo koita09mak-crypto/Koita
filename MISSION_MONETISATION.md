@@ -111,10 +111,18 @@ Le **même produit**, mais **deux réalités de prix et de paiement** :
 >
 > **CE QUI MANQUE** : (A) **gating des FACTURES** (non plafonnées → un gratuit peut en créer à l'infini) ; (B) sécurité marge IA (fail-open du comptage) ; (C) routage modèle (Haiku) ; (D) activation paiement réelle (clés Stripe/Wave/CinetPay côté Adama + preuve du flux webhook) ; (E) UI de gating factures ; (F) nettoyage `tmp-diagnostics` (edge function debug encore active).
 >
-> **Plan par vagues** : **M0** ✅ FAIT — compteur blindé (prouvé). **M1** ✅ FAIT — plafond factures (Free 3/mois bloqué serveur, Pro illimité, prouvé). **M2** ✅ FAIT — routage modèle (Haiku/Sonnet/Opus ; s'active avec `ANTHROPIC_API_KEY`). **M3** ✅ **FAIT (2026-06-12)** — flux paiement prouvé (webhook → bon plan, fail-closed sans secret = sécurisé) + essais auto-expirés. **Guide d'activation écrit : `docs/PAIEMENT_ACTIVATION.md`** → pour encaisser, Adama pose juste les secrets Stripe/Wave/CinetPay dans Supabase (ZÉRO code). → **M4** cleanup (retirer tmp-diagnostics, dé-dupliquer le cron email qui part 2×/jour, couvrir quotas UI).
+> **Plan par vagues** : **M0** ✅ FAIT — compteur blindé (prouvé). **M1** ✅ FAIT — plafond factures (Free 3/mois bloqué serveur, Pro illimité, prouvé). **M2** ✅ FAIT — routage modèle (Haiku/Sonnet/Opus ; s'active avec `ANTHROPIC_API_KEY`). **M3** ✅ FAIT — flux paiement prouvé + guide `docs/PAIEMENT_ACTIVATION.md`. **M4** ✅ **FAIT (2026-06-12)** — cleanup (cron email dé-dupliqué, quota employés UI, tmp-diagnostics retiré du code).
+>
+> ### 🎉 MISSION MONÉTISATION COMPLÈTE (2026-06-12)
+> Tout le socle est codé et prouvé. **Il ne reste plus de code à écrire pour lancer** — seulement de la config externe (côté Adama).
 
-## 🔑 À FAIRE par Adama pour activer les vrais paiements (rien à coder)
-Dans Supabase → Edge Functions → Secrets : **Stripe** (`STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, prix Pro/Business) · **Wave** (`WAVE_API_KEY`, `WAVE_WEBHOOK_SECRET`, prix) · **CinetPay** (`CINETPAY_API_KEY`, `CINETPAY_SITE_ID`, prix) · (option) `RESEND_API_KEY` pour les emails. Détail complet dans `docs/PAIEMENT_ACTIVATION.md` (repo app).
+## 🚀 Checklist de LANCEMENT (côté Adama — AUCUN code)
+1. **Paiements** : ouvrir Stripe/Wave/CinetPay + poser les secrets (`STRIPE_*`, `WAVE_*`, `CINETPAY_*`) dans Supabase. Détail : `docs/PAIEMENT_ACTIVATION.md`.
+2. **IA** : poser `ANTHROPIC_API_KEY` → active l'IA réelle + le routage Haiku.
+3. **Cleanup final** : `supabase functions delete tmp-diagnostics` (1 commande).
+4. **Mise en ligne** : reste de `LANCEMENT.md` (domaine, toggle leaked-password).
+
+> **Prochaine frontière = LANCER** (mise en ligne + acquisition des 1ers artisans), plus construire.
 
 1. **Décider** les paliers + prix + limites (section 4) — *toi*.
 2. **Modéliser** : la table `subscriptions` existe déjà → définir les plans (free/pro/équipe) proprement.
