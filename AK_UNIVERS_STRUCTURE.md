@@ -151,9 +151,9 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
   2. ✅ **FAIT (2026-06-11)** — **Vraies lignes de devis** (désignation/qté/PU/unité/total) + **TVA multi-taux par ligne** (20/10/5,5 + taux par défaut réglable) + mode forfait rapide en 1 ligne. Récap TVA par taux + Total HT/TVA/TTC. **Vérifié de visu** sur 2 PDF (micro 1 ligne + réel multi-taux, totaux justes : HT 6320 / TVA 832 / TTC 7152).
   3. **Verrouiller le lien devis↔facture** (marquer « facturé » à la conversion, pas de double facturation). ← **SUIVANT**
   4. ✅ **FAIT (2026-06-11) — Grand test bout-en-bout sur du RÉEL** (compte test en prod). PDF devis + facture **validés de visu** : accents OK, totaux justes (devis 4 937 €), facture conforme (émetteur / facturé à / référence devis / conditions légales). Le test a révélé des bugs réels que l'audit code avait ratés → **preuve que tester sur du réel est indispensable** :
-     - 🔴 **CRITIQUE — création de client cassée** : dérive de schéma (Clients.jsx envoie `societe/siret/statut/notes`, absentes de la table `clients`) → HTTP 400, aucun client créable par un vrai user. **Premier maillon de la boucle.** ← À CORRIGER #1 (proprement = structure DB)
-     - 🟠 **TTC faux à l'écran** : liste factures + KPI (CA) calculent HT×1,2 à plat au lieu de la TVA par ligne → CA affiché faux sur devis multi-taux (le PDF, lui, est juste). ← À CORRIGER #2
-     - 🟠 Friction inscription (confirmation email obligatoire) → tue l'« essai en 30 s ». Décision produit (plus tard).
+     - 🔴 ✅ **CORRIGÉ (2026-06-11)** — création de client cassée (dérive de schéma). Table `clients` migrée au bon schéma + Clients.jsx aligné. **Prouvé via l'UI** (création/recherche/édition d'un vrai client, is_demo=false).
+     - 🟠 ✅ **CORRIGÉ (2026-06-11)** — TTC faux à l'écran. CA/KPI/liste factures calculent maintenant le TTC par ligne comme le PDF (4 surfaces = 4 937 € sur le cas multi-taux). Compte de test purgé après vérif (prod propre).
+     - 🟠 Friction inscription (confirmation email obligatoire) → tue l'« essai en 30 s ». **EN COURS** : accès immédiat + confirmation différée (ne pas supprimer la vérif).
      - 🔵 Mineur : téléphone non capté à l'onboarding, seed clients démo inexploitable.
   5. **Structurer la base Supabase** (le test a prouvé qu'il y a de la dérive de schéma → audit DB complet). ← après les 2 fixes
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
