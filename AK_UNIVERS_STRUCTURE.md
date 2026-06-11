@@ -158,9 +158,10 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
   5. ✅ **AUDIT FAIT (2026-06-11) — base Supabase** (lecture seule via MCP, écrit dans `docs/DB_SCHEMA.md`). 78 tables · 100% RLS · 12 avec données.
      - 🟢 **Sécurité solide** : RLS partout avec `WITH CHECK (auth.uid()=user_id)` → **zéro usurpation** ; dérives historiques (clients/candidatures) corrigées.
      - 🔴 **Dettes à traiter PAR LOTS** (jamais un gros refactor) :
-       - **Lot 1 (sûr) — intégrité + sécurité** : FK manquantes (chantiers.client_id, devis.facture_id, *.user_id) + fix `search_path` de `ak_auto_confirm_email` + policy `mentions_legales` + pg_net hors public. ← **À FAIRE**
+       - **Lot 1 (sûr) — intégrité + sécurité** : FK manquantes (chantiers.client_id, devis.facture_id, *.user_id) + fix `search_path` de `ak_auto_confirm_email` + policy `mentions_legales` + pg_net hors public. ← **EN COURS** (Vague 0 sécurité ✅ faite/poussée ; Vague 1 FK = ON DELETE par table : CASCADE pour données privées (employes/planning), SET NULL pour communautaire (forum, anonymisé) + liens métier (client/facture)).
        - **Lot 2 — nettoyage** : 78 tables / 12 utilisées → supprimer/fusionner doublons (abonnements vs subscriptions, 3 systèmes de progression, formations_perso/suivies) APRÈS vérif zéro usage code. Cible ~35.
        - **Lot 3 — FR/AOF** : 10 tables en timestamp naïf → `timestamptz` (sinon bugs de fuseau France/Afrique de l'Ouest — concerne directement le double marché).
+       - **Lot/Vague 3 — RGPD & suppression de compte** : bug caché trouvé à l'audit FK → les 12 vieilles tables empêchent de supprimer un compte proprement (droit à l'effacement RGPD). + anonymiser `auteur_nom` du forum (« Utilisateur supprimé ») à la suppression de compte.
        - **Décision produit ouverte** : partage org/coéquipier (RLS asymétrique) — veut-on le travail en équipe ? Si artisans solos → ne pas y toucher.
      - **Cible** : NOYAU (~35 : identité, monétisation, IA, communauté, contenu ak_*, juridique) ⇄ MODULES par portail (Activité/BTP, Finances, Emploi, Formation, Créateur…).
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
