@@ -111,7 +111,10 @@ Le **même produit**, mais **deux réalités de prix et de paiement** :
 >
 > **CE QUI MANQUE** : (A) **gating des FACTURES** (non plafonnées → un gratuit peut en créer à l'infini) ; (B) sécurité marge IA (fail-open du comptage) ; (C) routage modèle (Haiku) ; (D) activation paiement réelle (clés Stripe/Wave/CinetPay côté Adama + preuve du flux webhook) ; (E) UI de gating factures ; (F) nettoyage `tmp-diagnostics` (edge function debug encore active).
 >
-> **Plan par vagues** : **M0** ✅ FAIT — compteur blindé (prouvé). **M1** ✅ FAIT — plafond factures (Free 3/mois bloqué serveur, Pro illimité, prouvé). **M2** ✅ **FAIT (2026-06-12)** — routage modèle (Haiku pour le routinier, Sonnet nuancé, Opus override) ; s'active avec la clé `ANTHROPIC_API_KEY`. → **M3** prouver le flux paiement (webhook simulé) → **M4** cleanup + cohérence.
+> **Plan par vagues** : **M0** ✅ FAIT — compteur blindé (prouvé). **M1** ✅ FAIT — plafond factures (Free 3/mois bloqué serveur, Pro illimité, prouvé). **M2** ✅ FAIT — routage modèle (Haiku/Sonnet/Opus ; s'active avec `ANTHROPIC_API_KEY`). **M3** ✅ **FAIT (2026-06-12)** — flux paiement prouvé (webhook → bon plan, fail-closed sans secret = sécurisé) + essais auto-expirés. **Guide d'activation écrit : `docs/PAIEMENT_ACTIVATION.md`** → pour encaisser, Adama pose juste les secrets Stripe/Wave/CinetPay dans Supabase (ZÉRO code). → **M4** cleanup (retirer tmp-diagnostics, dé-dupliquer le cron email qui part 2×/jour, couvrir quotas UI).
+
+## 🔑 À FAIRE par Adama pour activer les vrais paiements (rien à coder)
+Dans Supabase → Edge Functions → Secrets : **Stripe** (`STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, prix Pro/Business) · **Wave** (`WAVE_API_KEY`, `WAVE_WEBHOOK_SECRET`, prix) · **CinetPay** (`CINETPAY_API_KEY`, `CINETPAY_SITE_ID`, prix) · (option) `RESEND_API_KEY` pour les emails. Détail complet dans `docs/PAIEMENT_ACTIVATION.md` (repo app).
 
 1. **Décider** les paliers + prix + limites (section 4) — *toi*.
 2. **Modéliser** : la table `subscriptions` existe déjà → définir les plans (free/pro/équipe) proprement.
