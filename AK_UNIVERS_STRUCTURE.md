@@ -147,10 +147,10 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
   - Règle : ne jamais promettre une autonomie qui n'existe pas. Un utilisateur trahi une fois ne revient pas.
 - **État vide du héros (jour 1)** : jamais de héros vide ni de faux « tout va bien ». Si compte vierge → carte unique qui vend : « Tes agents sont prêts à travailler pour toi » + 1 bouton (« Créer mon 1er devis → »). *(2026-06-11)*
 - **Audit du cœur DEVIS → FACTURE → PAIEMENT (2026-06-11)** : la boucle est **structurellement complète et persiste bien** (schéma sain, RLS OK, statuts/retard/relances câblés, PDF généré, build vert + 29 tests). MAIS elle **n'a jamais tourné sur du réel** (0 client / 0 devis / 0 facture en base). 3 faiblesses + plan de réparation (ordre de levier) :
-  1. **Capter l'entreprise tôt** (SIRET, raison sociale, **régime TVA**). Aujourd'hui SIRET vide + **TVA figée à 20% en dur** = documents **non conformes** — et **FAUX pour un auto-entrepreneur/micro** (franchise → mention obligatoire « TVA non applicable, art. 293 B du CGI »). ← **EN COURS**
-  2. **Vraies lignes de devis** (désignation/qté/PU/total) + TVA multi-taux (20/10/5,5/0).
-  3. **Verrouiller le lien devis↔facture** (marquer « facturé » à la conversion).
-  4. **Un vrai run de bout en bout** (client→devis→accepter→facturer→payer) pour éprouver sur du réel et passer les ⚠️ en ✅.
+  1. ✅ **FAIT (2026-06-11)** — **Capter l'entreprise tôt** (SIRET, raison sociale, **régime TVA**). 4e étape onboarding + gate (pas de PDF sans SIRET/raison sociale). PDF conforme prouvé : micro → « TVA non applicable, art. 293 B du CGI » ; réel → TVA au taux. **Vérifié de visu sur PDF.**
+  2. ✅ **FAIT (2026-06-11)** — **Vraies lignes de devis** (désignation/qté/PU/unité/total) + **TVA multi-taux par ligne** (20/10/5,5 + taux par défaut réglable) + mode forfait rapide en 1 ligne. Récap TVA par taux + Total HT/TVA/TTC. **Vérifié de visu** sur 2 PDF (micro 1 ligne + réel multi-taux, totaux justes : HT 6320 / TVA 832 / TTC 7152).
+  3. **Verrouiller le lien devis↔facture** (marquer « facturé » à la conversion, pas de double facturation). ← **SUIVANT**
+  4. **Un vrai run de bout en bout** (client→devis→accepter→facturer→payer) pour éprouver sur du réel et passer les derniers ⚠️ en ✅.
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
