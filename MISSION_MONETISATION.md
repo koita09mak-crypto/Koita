@@ -111,7 +111,7 @@ Le **même produit**, mais **deux réalités de prix et de paiement** :
 >
 > **CE QUI MANQUE** : (A) **gating des FACTURES** (non plafonnées → un gratuit peut en créer à l'infini) ; (B) sécurité marge IA (fail-open du comptage) ; (C) routage modèle (Haiku) ; (D) activation paiement réelle (clés Stripe/Wave/CinetPay côté Adama + preuve du flux webhook) ; (E) UI de gating factures ; (F) nettoyage `tmp-diagnostics` (edge function debug encore active).
 >
-> **Plan par vagues** : **M0** ✅ FAIT — compteur blindé (réservation atomique, prouvé). **M1** ✅ **FAIT (2026-06-12)** — plafond factures : Free 3/mois (4ᵉ bloquée serveur), Pro illimité, prouvé + build vert. → **M2** routage Haiku → **M3** prouver le flux paiement (webhook simulé) → **M4** cleanup + cohérence.
+> **Plan par vagues** : **M0** ✅ FAIT — compteur blindé (prouvé). **M1** ✅ FAIT — plafond factures (Free 3/mois bloqué serveur, Pro illimité, prouvé). **M2** ✅ **FAIT (2026-06-12)** — routage modèle (Haiku pour le routinier, Sonnet nuancé, Opus override) ; s'active avec la clé `ANTHROPIC_API_KEY`. → **M3** prouver le flux paiement (webhook simulé) → **M4** cleanup + cohérence.
 
 1. **Décider** les paliers + prix + limites (section 4) — *toi*.
 2. **Modéliser** : la table `subscriptions` existe déjà → définir les plans (free/pro/équipe) proprement.
