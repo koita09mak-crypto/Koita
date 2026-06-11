@@ -141,6 +141,7 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
 ## 7. Décisions actées
 
 - **Promesse n°1 (north star)** : AK **facilite** — il fait le répétitif/difficile à ta place et comble le manque de connaissances. L'accueil et la navigation se construisent autour de ça. *(2026-06-11)*
+- **La conformité / juridique = PILIER de valeur, pas une corvée** *(2026-06-11)* : les angles morts légaux (RGPD, droit à l'effacement, mentions, obligations) sont précisément « ce que l'utilisateur ne maîtrise pas » → AK les comble et **protège** l'utilisateur. C'est un différenciateur fort pour un public (artisans) perdu sur ce terrain. Le « juridique » est déjà dans le NOYAU. 1re brique concrète : suppression de compte RGPD-propre (Vague 3 DB).
 - **Promesse agents = « AK REPÈRE pour toi », pas « AK travaille pendant que tu dors »** *(2026-06-11)*
   - Vérité technique : les 5 agents = **moteur de règles côté client** qui scanne les vraies données **à chaque ouverture de l'accueil**. Pas de cron serveur, pas de table `agent_logs` persistante → **aucune autonomie nocturne réelle.**
   - Wording validé pour le héros : **« CE QU'AK A REPÉRÉ POUR TOI »** (exact, défendable). On ne dit ni « a fait », ni « cette nuit ».
