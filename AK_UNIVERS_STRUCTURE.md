@@ -1,0 +1,113 @@
+# AK UNIVERS — Structure de référence
+
+> **Dernière mise à jour : 2026-06-11**
+> Document carte. C'est ICI qu'on regarde quand on se demande « on en est où, c'est quoi le plan ».
+> La règle d'or : **AK Univers est le NOYAU. Les métiers sont des MODULES branchés dessus.**
+
+---
+
+## 1. La vision en une phrase
+
+**AK Univers est une plateforme propulsée par l'IA qui accompagne chaque personne dans sa vraie vie professionnelle — quel que soit son métier — en réunissant au même endroit le travail, l'argent, la formation, le droit et la diaspora.**
+
+L'IA n'y est pas un chatbot. C'est un **moteur qui travaille à la place de l'utilisateur** : elle génère le devis, anime la formation, trie les offres d'emploi, relance les clients.
+
+---
+
+## 2. Le principe fondateur : on part des VRAIES VIES, pas des modules
+
+On ne conçoit pas en « fonctionnalités ». On conçoit autour de **personnes réelles** et de ce qu'elles vivent. Leurs besoins **se croisent** : une même personne traverse plusieurs modules.
+
+| La personne | Sa vraie vie / son problème | Modules AK Univers utilisés |
+|---|---|---|
+| **Adama / l'électricien** (France) | Chantiers, habilitations, devis, se faire payer | BTP · Finance · Formation · Diaspora |
+| **Fatou** (services à domicile) | Trouver des clients, facturer, être en règle | Services à domicile · Finance · Droit |
+| **Karim** (créateur / jeune actif) | Monétiser son savoir, se former, trouver un job | Créateur de contenu · Formation · Emploi |
+| **Le livreur** (Afrique) | Livraisons, tournées, gérer ses recettes | Transport & Logistique · Finance |
+| **Le Sénégalais de la diaspora** | Se former à distance, envoyer/recevoir de l'argent | Formation · Diaspora · Finance |
+
+> ⚠️ Personas **Fatou** et **Karim** à confirmer/affiner par Adama. Le reste est validé.
+
+**Lecture clé :** presque tout le monde touche à **Finance** ; beaucoup touchent à **Formation** et **Diaspora**. Donc ces briques sont **communes** → elles vivent dans le NOYAU, pas dans un métier.
+
+---
+
+## 3. La carte complète
+
+```
+        ┌───────────────────────────────────────────────────────┐
+        │                      AK  UNIVERS                        │
+        │     Compte unique · IA qui TRAVAILLE · Paiement         │
+        │   SOCLE : Finance · Droit · Financement · Diaspora      │ ← sert à TOUS
+        └───────────────────────────────────────────────────────┘
+          │         │          │          │           │         │
+       ┌──┴─┐  ┌────┴───┐ ┌────┴───┐ ┌────┴────┐ ┌────┴────┐ ┌──┴──────┐
+       │BTP │  │Services│ │Créateur│ │Formation│ │ Emploi  │ │Transport│
+       │    │  │à domic.│ │contenu │ │         │ │         │ │ & Logist│
+       └────┘  └────────┘ └────────┘ └─────────┘ └─────────┘ └─────────┘
+```
+
+---
+
+## 4. Règle d'architecture : SOCLE vs VERTICAL
+
+**Séparation légère, pas de sur-ingénierie** (budget réel : contraint, équipe : Adama seul).
+
+### NOYAU / SOCLE (construit UNE fois, partagé par tous les modules)
+- **Compte / identité** utilisateur
+- **IA / agents** (Devis, Commercial, Chantier… réutilisables par tout métier)
+- **Paiement** (Wave, CinetPay, et autres)
+- **Finance / Compta** : devis, factures, TVA, URSSAF, rentabilité
+- **Droit** : statuts juridiques, contrats, obligations légales
+- **Financement** : CPF, ACRE, aides, subventions
+- **Diaspora** : transferts d'argent, formation à distance, France ⇄ Afrique
+
+### VERTICAUX (un par métier ; ne contiennent QUE le spécifique ; **importent** le socle)
+- **BTP** : chantiers, planning, habilitations, normes NF C, bibliothèque de prix BTP
+- **Services à domicile** : prestations, clients récurrents
+- **Créateur de contenu** : audience, monétisation
+- **Formation** : catalogue, certifications, progression *(transversal mais présenté comme module)*
+- **Emploi** : offres, candidatures, matching
+- **Transport & Logistique** : tournées, livraisons, recettes
+
+> **Loi non négociable :** un vertical **IMPORTE** le socle, il ne le **recopie jamais**.
+> Quand on ajoutera « Services à domicile », il doit réutiliser Finance/Droit/Diaspora **sans les réécrire**.
+
+---
+
+## 5. Ordre de lancement (réaliste avec petit budget)
+
+Comme Amazon a démarré **aux livres uniquement** avant de tout vendre, et l'iPhone avec une poignée de fonctions :
+
+1. **Bâtir le NOYAU proprement** (compte, IA, paiement, socle Finance/Droit/Financement/Diaspora).
+2. **Lancer UN seul module : le BTP** — parce que c'est le métier qu'Adama connaît et peut rendre crédible. C'est le « rayon livres » d'AK Univers.
+3. **Brancher les modules suivants** (Services, Transport, Créateur…) sur le noyau, sans tout refaire.
+
+Vision = large. Lancement = focalisé.
+
+---
+
+## 6. Règle de vérité (anti « c'est bon »)
+
+Historique : les outils répondaient « c'est bon / c'est fait » sans vérifier → des failles cachées sortaient plus tard.
+
+**Désormais, jamais de « c'est bon » sans preuve.** Toute affirmation d'avancement doit s'accompagner d'un tableau :
+
+| Élément | Existe déjà ? | À créer | À compléter | Ne pas toucher |
+
+Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassurance à vide.
+
+---
+
+## 7. Décisions actées
+
+- AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
+- Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
+- **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
+- L'IA est un **moteur qui agit**, pas un chatbot. *(2026-06-11)*
+- Méthode obligatoire : **audit d'abord** (Phase 0) avant toute création. *(2026-06-11)*
+
+## 8. Questions ouvertes
+
+- Définition précise des personas **Fatou** et **Karim**.
+- Le noyau (compte + IA + paiement + socle) existe-t-il déjà dans l'app `AK_Digital_BTP`, ou est-il dupliqué dans les pages ? → audit à lancer.
