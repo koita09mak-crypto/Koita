@@ -146,6 +146,11 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
   - Wording validé pour le héros : **« CE QU'AK A REPÉRÉ POUR TOI »** (exact, défendable). On ne dit ni « a fait », ni « cette nuit ».
   - Règle : ne jamais promettre une autonomie qui n'existe pas. Un utilisateur trahi une fois ne revient pas.
 - **État vide du héros (jour 1)** : jamais de héros vide ni de faux « tout va bien ». Si compte vierge → carte unique qui vend : « Tes agents sont prêts à travailler pour toi » + 1 bouton (« Créer mon 1er devis → »). *(2026-06-11)*
+- **Audit du cœur DEVIS → FACTURE → PAIEMENT (2026-06-11)** : la boucle est **structurellement complète et persiste bien** (schéma sain, RLS OK, statuts/retard/relances câblés, PDF généré, build vert + 29 tests). MAIS elle **n'a jamais tourné sur du réel** (0 client / 0 devis / 0 facture en base). 3 faiblesses + plan de réparation (ordre de levier) :
+  1. **Capter l'entreprise tôt** (SIRET, raison sociale, **régime TVA**). Aujourd'hui SIRET vide + **TVA figée à 20% en dur** = documents **non conformes** — et **FAUX pour un auto-entrepreneur/micro** (franchise → mention obligatoire « TVA non applicable, art. 293 B du CGI »). ← **EN COURS**
+  2. **Vraies lignes de devis** (désignation/qté/PU/total) + TVA multi-taux (20/10/5,5/0).
+  3. **Verrouiller le lien devis↔facture** (marquer « facturé » à la conversion).
+  4. **Un vrai run de bout en bout** (client→devis→accepter→facturer→payer) pour éprouver sur du réel et passer les ⚠️ en ✅.
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
