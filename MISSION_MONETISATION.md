@@ -105,6 +105,14 @@ Le **même produit**, mais **deux réalités de prix et de paiement** :
 
 ## 5. Ordre de construction (structurer d'abord)
 
+> ### ✅ État réel (audit agent, 2026-06-11) — la monétisation est déjà ~70% construite
+>
+> **DÉJÀ EN PLACE (ne pas refaire)** : 4 plans + quotas (`lib/plans.js`) · quotas serveur par trigger (devis 3/mois, clients 10, chantiers 1, employés 1) · enforcement IA dans `agent-run` · **paiement câblé : Stripe + Wave + CinetPay** (6 edge functions) + tables `subscriptions`/`paiements` + essai (pg_cron) + promotions · pages /pricing, /abonnement, /checkout.
+>
+> **CE QUI MANQUE** : (A) **gating des FACTURES** (non plafonnées → un gratuit peut en créer à l'infini) ; (B) sécurité marge IA (fail-open du comptage) ; (C) routage modèle (Haiku) ; (D) activation paiement réelle (clés Stripe/Wave/CinetPay côté Adama + preuve du flux webhook) ; (E) UI de gating factures ; (F) nettoyage `tmp-diagnostics` (edge function debug encore active).
+>
+> **Plan par vagues** : **M0** blinder le compteur (fix « réserver avant, réconcilier après » — atomique, risque nul, priorité) → **M1** plafonner factures (**décision : 3/mois sur le gratuit, miroir devis** → vivre la boucle complète) → **M2** routage Haiku → **M3** prouver le flux paiement (webhook simulé) → **M4** cleanup + cohérence.
+
 1. **Décider** les paliers + prix + limites (section 4) — *toi*.
 2. **Modéliser** : la table `subscriptions` existe déjà → définir les plans (free/pro/équipe) proprement.
 3. **Câbler les limites** (gating) côté app : bloquer/inviter à upgrader selon le plan.
