@@ -150,7 +150,12 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
   1. ✅ **FAIT (2026-06-11)** — **Capter l'entreprise tôt** (SIRET, raison sociale, **régime TVA**). 4e étape onboarding + gate (pas de PDF sans SIRET/raison sociale). PDF conforme prouvé : micro → « TVA non applicable, art. 293 B du CGI » ; réel → TVA au taux. **Vérifié de visu sur PDF.**
   2. ✅ **FAIT (2026-06-11)** — **Vraies lignes de devis** (désignation/qté/PU/unité/total) + **TVA multi-taux par ligne** (20/10/5,5 + taux par défaut réglable) + mode forfait rapide en 1 ligne. Récap TVA par taux + Total HT/TVA/TTC. **Vérifié de visu** sur 2 PDF (micro 1 ligne + réel multi-taux, totaux justes : HT 6320 / TVA 832 / TTC 7152).
   3. **Verrouiller le lien devis↔facture** (marquer « facturé » à la conversion, pas de double facturation). ← **SUIVANT**
-  4. **Un vrai run de bout en bout** (client→devis→accepter→facturer→payer) pour éprouver sur du réel et passer les derniers ⚠️ en ✅.
+  4. ✅ **FAIT (2026-06-11) — Grand test bout-en-bout sur du RÉEL** (compte test en prod). PDF devis + facture **validés de visu** : accents OK, totaux justes (devis 4 937 €), facture conforme (émetteur / facturé à / référence devis / conditions légales). Le test a révélé des bugs réels que l'audit code avait ratés → **preuve que tester sur du réel est indispensable** :
+     - 🔴 **CRITIQUE — création de client cassée** : dérive de schéma (Clients.jsx envoie `societe/siret/statut/notes`, absentes de la table `clients`) → HTTP 400, aucun client créable par un vrai user. **Premier maillon de la boucle.** ← À CORRIGER #1 (proprement = structure DB)
+     - 🟠 **TTC faux à l'écran** : liste factures + KPI (CA) calculent HT×1,2 à plat au lieu de la TVA par ligne → CA affiché faux sur devis multi-taux (le PDF, lui, est juste). ← À CORRIGER #2
+     - 🟠 Friction inscription (confirmation email obligatoire) → tue l'« essai en 30 s ». Décision produit (plus tard).
+     - 🔵 Mineur : téléphone non capté à l'onboarding, seed clients démo inexploitable.
+  5. **Structurer la base Supabase** (le test a prouvé qu'il y a de la dérive de schéma → audit DB complet). ← après les 2 fixes
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
