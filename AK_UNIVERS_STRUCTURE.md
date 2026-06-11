@@ -141,6 +141,11 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
 ## 7. Décisions actées
 
 - **Promesse n°1 (north star)** : AK **facilite** — il fait le répétitif/difficile à ta place et comble le manque de connaissances. L'accueil et la navigation se construisent autour de ça. *(2026-06-11)*
+- **Promesse agents = « AK REPÈRE pour toi », pas « AK travaille pendant que tu dors »** *(2026-06-11)*
+  - Vérité technique : les 5 agents = **moteur de règles côté client** qui scanne les vraies données **à chaque ouverture de l'accueil**. Pas de cron serveur, pas de table `agent_logs` persistante → **aucune autonomie nocturne réelle.**
+  - Wording validé pour le héros : **« CE QU'AK A REPÉRÉ POUR TOI »** (exact, défendable). On ne dit ni « a fait », ni « cette nuit ».
+  - Règle : ne jamais promettre une autonomie qui n'existe pas. Un utilisateur trahi une fois ne revient pas.
+- **État vide du héros (jour 1)** : jamais de héros vide ni de faux « tout va bien ». Si compte vierge → carte unique qui vend : « Tes agents sont prêts à travailler pour toi » + 1 bouton (« Créer mon 1er devis → »). *(2026-06-11)*
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
@@ -152,3 +157,4 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
 
 - Définition précise des personas **Fatou** et **Karim**.
 - Le noyau (compte + IA + paiement + socle) existe-t-il déjà dans l'app `AK_Digital_BTP`, ou est-il dupliqué dans les pages ? → audit à lancer.
+- **Roadmap — vraie autonomie des agents** : faire tourner les agents en arrière-plan côté serveur (cron) + table `agent_logs` persistante. C'est ce qui débloquera la promesse « AK travaille pendant que tu dors » (« CE QU'AK A FAIT POUR TOI CETTE NUIT »). Différenciateur fort, mais nécessite du back. *(noté 2026-06-11)*
