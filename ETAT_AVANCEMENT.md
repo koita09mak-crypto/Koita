@@ -21,14 +21,15 @@
 - [x] Helper partagé `etatExpiration()`
 - [x] **Brique Financement** (`lib/financement.js` : CPF/ACRE/aides) — créée dans le socle (phase Entreprise)
 
-## 3. Module BTP (pilote) — 🔄 4/5
+## 3. Module BTP (pilote) — ✅ 5/5 COMPLET
 - [x] **Terrain** (planning, chantiers, rapport, matériaux, bilan)
-- [x] **Compétences** (certifs badges 90j, alertes, catalogue, objectifs, normes) — EN PROD
+- [x] **Compétences** (certifs badges 90j, alertes, catalogue, objectifs, normes)
 - [x] **Argent** (KPIs Facturé/Encaissé/En attente/Rentabilité, devis lié, dépenses, rentabilité par type, simulateur)
 - [x] **Entreprise** (statut + alertes plafond/décennale/RC Pro, guide création + calculateur, fournisseurs, sous-traitants, obligations J-30, simulateur, **+ brique Financement**)
-- [ ] **Avenir** ← *dernière dimension* (IA/automatisation, créer du contenu, former, diaspora, progression)
+- [x] **Avenir** (IA/automatisation, créer du contenu, former, diaspora, progression)
+- [x] Placeholder `BtpBientot.jsx` supprimé (nettoyage)
 
-➡️ **Une seule dimension restante pour compléter le pilote BTP.**
+🎉 **PILOTE BTP COMPLET — 5 dimensions en prod, socle propre, zéro dette.**
 
 ## 4. Après le pilote — ⬜ DERNIÈRE LIGNE DROITE
 - [ ] Passe de finition qualité 2026 (le gros prompt) : états, perf, cohérence sur toute l'app
@@ -41,8 +42,8 @@
 
 ## 🎯 Où on en est
 - Fondations + noyau = **✅ faits**
-- Pilote BTP = **4/5** (reste Avenir)
-- Plateforme complète = la dernière ligne droite, après le pilote
+- Pilote BTP = **✅ 5/5 COMPLET**
+- Prochaine étape : finition qualité 2026 + mobile (PWA) → pour rendre l'app « payable »
 
 ## Décisions métier actées (rappel)
 - KPI fiscal = **ENCAISSÉ** (base URSSAF / plafond micro), pas le facturé. *(2026-06-11)*
