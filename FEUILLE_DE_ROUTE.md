@@ -16,6 +16,12 @@
 - **Chaque génération** : focalisée → complète → prouvée → **vendue** → finance la suivante.
 - **On ne reconstruit jamais le noyau** : chaque module suivant est donc **bien plus rapide**.
 
+> ### 🧭 La philosophie d'Adama (12/06) — « tout-en-un perçu, livré par générations »
+> - **La destination** = un **super-outil tout-en-un** pour la vie pro : du devis au paiement, **QR codes**, **colis / transport / logistique**, **formation**, **création de contenu**, **entreprise**. Un endroit, tout dedans.
+> - **L'ancre = le BTP** : la force d'Adama, un marché vaste et d'avenir, qui **ouvre les portes** (diaspora + France). Et une vision **opérationnelle** du BTP (pas que la paperasse : matériaux, livraisons, suivi de chantier, QR).
+> - **La résolution de la tension « tout dès le début » vs « focus »** (= l'angle mort) : comme Apple, **MONTRER tout l'écosystème** (modules visibles / « bientôt » → l'app n'est pas passive, l'utilisateur sent qu'il a tout sous la main) **mais LIVRER une chose excellente à la fois.** Le « tout-en-un » est **perçu** dès le départ, **sans** retomber dans le fouillis (8 modules à moitié faits).
+> - **Ambition premium** : pousser l'expérience d'un cran (le vrai feel Apple — fluidité, beauté, haut de gamme), au bon moment.
+
 ---
 
 ## 2. Bilan — Génération 1 (l'« iPhone 2007 »)
@@ -36,7 +42,8 @@ Voir `MISSION_MONETISATION.md` (checklist de lancement).
 | Gen | Module | Pourquoi à ce moment | Analogie Apple |
 |---|---|---|---|
 | **1** | **BTP** ✅ | Produit focalisé qui lance la plateforme + bâtit le noyau | iPhone 2007 |
-| **2** | **Finances** | Extension naturelle du même artisan (trésorerie, charges, TVA à payer, déclarations) — plus de valeur, plus de raisons de payer | iPhone 3G (même produit, + de capacités) |
+| **1 bis** | **BTP opérationnel** (extension de Gen 1) | Approfondir le BTP au-delà de la paperasse : **QR codes**, suivi matériaux, **colis / livraisons / logistique**, suivi de chantier. C'est la force d'Adama → produit plus riche et plus collant | iPhone 3G (même produit, + de capacités) |
+| **2** | **Finances** | Extension naturelle du même artisan (trésorerie, charges, TVA à payer, déclarations) — plus de valeur, plus de raisons de payer | iPhone 4 |
 | **3** | **Formation** | Comble le « manque de connaissances » de ta vision (entreprendre, IA, métier) + élargit l'audience au-delà des artisans | l'App Store (l'écosystème s'ouvre) |
 | **4** | **Emploi / Marketplace** | Mise en relation (chantiers, clients, sous-traitance) → effets de réseau | iMessage/services (le réseau) |
 | **5** | **Diaspora** | Ton angle UNIQUE : pont France ↔ Afrique de l'Ouest (projets au pays, transferts, consulting technique) | l'expansion internationale |
