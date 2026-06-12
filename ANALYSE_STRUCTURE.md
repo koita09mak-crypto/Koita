@@ -75,3 +75,11 @@
 3. **Suppression franche** des vieux moteurs (grep = 0 import externe + test P0 en filet).
 
 → **C'est le geste qui rend l'app fidèle à son nom : AK Univers, pas AK BTP.**
+
+### ✅ UNIFICATION LIVRÉE ET PROUVÉE (2026-06-12)
+- **Un seul moteur** : `lib/moteurEcheances.js` + `lib/detecteurs.js` (12 règles déclaratives), échéances via `certifs.js`. Anciens moteurs (`agentsBilan.js`, `recommandations.js`) **supprimés**.
+- **3 décisions implémentées + testées** : ① anti-redondance (un signal = 1 fois) · ② **filtre par métier prouvé** (commerce → 4 agents sans juridique ; formation/créateur → 0 agent BTP ; BTP → roster complet) · ③ suppression franche.
+- **Filet de Phase 0 a rattrapé une erreur** : le « grep = 0 import » était faux → 2 consommateurs cachés (`agentLog.js`, `useContenuPortail.js`) migrés AVANT suppression. *(Preuve que tester avant de jeter = vital.)*
+- **49/49 → 47/47 tests, build vert, 0 référence morte. Parité prouvée** (comptes BTP existants inchangés).
+- **Effet** : un non-BTP ne voit plus les agents BTP ; ajouter un métier = **lignes de config**, pas de code. → **AK est désormais structurellement UNIVERSEL.**
+- *Reste parké (Q3)* : seeds catalogue BTP dans le socle — non touché (prudence), chantier dédié plus tard.
