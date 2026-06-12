@@ -87,3 +87,23 @@ Rôle : **AK veille, l'utilisateur n'a pas à connaître le droit.** Tout part d
 domaines **automatiquement**. Plus une rubrique isolée → une **vigilance permanente** portée par le moteur.
 
 *(Rappel : ceci = couche A. Les couches B/plateforme et C/paiement = devoirs d'AK, checklist de lancement, à valider par un juriste — cf. §2 bis.)*
+
+---
+
+## 6. Domaine FINANCEMENT — scénarios WOW *(défini 12/06 — « commencer par le commencement »)*
+
+Rôle : **AK ne te laisse jamais passer à côté d'argent auquel tu as droit** (domaine où les gens perdent de l'argent par ignorance : aides non réclamées, CPF jamais utilisé).
+
+| # | Scénario WOW | Connecté à |
+|---|---|---|
+| 1 | **Aides au démarrage, au bon moment** : « active l'**ACRE AVANT** immatriculation », maintien ARE, microcrédit | Entreprise + Droit |
+| 2 | **Formation financée** : « cette formation = 100% **CPF** / AIF Pôle Emploi » | Formation |
+| 3 | **Financer matériel/projet** : prêt d'honneur, leasing, microcrédit pro | Entreprise + Tangible |
+| 4 | **Anticipation trésorerie** : « trou de cash dans 3 sem. → relance / avance sur facture » | Finances + Droit (impayés) |
+| 5 | **Diaspora** : financer un projet au pays, microfinance locale, transferts | Diaspora |
+
+**WOW central** : *« AK trouve l'argent que tu ne savais pas pouvoir avoir. »* Le **timing** est le wow (ACRE après immatriculation = perdue → AK prévient avant). Brique `lib/financement.js` (CPF/ACRE/aides) existe déjà dans le socle.
+
+**Caveat** : AK oriente/informe, l'**éligibilité finale se confirme auprès de l'organisme** (Pôle Emploi/URSSAF). On détecte et on guide, on ne promet pas.
+
+**Le fil** : se déclenche depuis la situation — création d'entreprise → ACRE · manque de compétence → CPF · impayé → avance · projet → prêt.
