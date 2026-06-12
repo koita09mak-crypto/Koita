@@ -59,3 +59,19 @@
 **Le levier (effort Moyen, AUCUNE migration BDD)** : **fusionner `agentsBilan` dans le modèle déjà-générique de `recommandations.js`** (scopé portail) + généraliser `certifs.js` aux échéances → **UN seul moteur de routines paramétrable par métier**. Bonus : le **héros d'accueil devient universel** automatiquement (montre les bons agents selon le métier).
 
 **Timing** : ne bloque PAS le lancement BTP (1ers users = BTP). Mais c'est **l'âme de la vision + enlève une dette (doublon)** → bon candidat comme **fondation de la Gen 2**. *(Plan d'unification détaillé à demander à l'agent.)*
+
+---
+
+## 🔧 PLAN D'UNIFICATION (agent, 2026-06-12) — « un seul moteur d'échéances, deux vues »
+
+**Idée** : remplacer le code impératif (80 lignes/alerte) par une **liste de DÉTECTEURS déclaratifs** (1 fiche de config par routine : `id, portail, agentKey, table+colonnes, secteurs?, detecte(), message(), route/cta/priorite, seuilJours?`). → **Ajouter une routine pour un nouveau métier = 1 ligne de config**, pas un nouveau moteur. `certifs.js` = primitive d'échéance unique.
+- **Architecture** : `moteurEcheances.js` (1 scan batché) → `signaux[]` → 2 vues (`vueAgents` pour AgentsNuit / `vueRecos` pour PourToi).
+- **Sans risque** : lecture seule, **aucune migration BDD**, **Phase 0 = test de non-régression** (fige la sortie actuelle). Effort **~1-1,5 j**.
+- **Phases** : P0 test filet → P1 extraire moteur+détecteurs (transcription fidèle, dédup) → P2 brancher les 2 vues + supprimer le doublon.
+
+**Décisions tranchées (Adama, 2026-06-12)** :
+1. **Garder les 2 surfaces** (Agents + Pour toi) **avec anti-redondance** (un signal = 1 fois). *(voir mockup ASCII avant de figer)*
+2. **OUI, filtrer par métier** : un non-BTP ne voit plus les agents Chantier/Juridique. ← cœur de la vision universelle.
+3. **Suppression franche** des vieux moteurs (grep = 0 import externe + test P0 en filet).
+
+→ **C'est le geste qui rend l'app fidèle à son nom : AK Univers, pas AK BTP.**
