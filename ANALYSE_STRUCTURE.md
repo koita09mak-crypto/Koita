@@ -42,3 +42,20 @@
 2. L'onboarding (`type_profil`/`sous_profil`) propose-t-il **plusieurs métiers** ? Que voit un user **non-BTP** ?
 3. Le socle (`src/socle`) : qu'expose-t-il, est-il **métier-agnostique** ?
 4. Les agents (`agentsBilan`) : règles BTP en dur ou **configurables par métier** ?
+
+---
+
+## ✅ RÉSULTAT DU MINI-AUDIT (2026-06-12) — la vision universelle est à ~80%
+
+**Verdict : DEUX moteurs de routines coexistent (un générique, un BTP) — il faut les fusionner.**
+
+| Question | Réponse |
+|---|---|
+| 1. Moteur générique de routines ? | 🟠 **Partiel** : `lib/recommandations.js` (Sprint 16) est **déjà générique/cross-portail** ; mais `lib/agentsBilan.js` est **BTP en dur** + aucune table « tâche récurrente » (chaque alerte recodée ad-hoc). `certifs.js` générique mais sous-utilisé. |
+| 2. Onboarding multi-métiers ? | ✅ **OUI, déjà universel** : `lib/portails.js` = 6 portails × 5 profils, plein de non-BTP (commerce, transport, ménage, salarié, diaspora, URSSAF…). **BTP = 1 profil sur 5.** L'entrée est générique, **l'atterrissage non** (cf. Q4). |
+| 3. Socle métier-agnostique ? | 🟠 **Majoritairement**, mais bundle des défauts BTP (seeds catalogue Élec/Réseau/CCTV + exporte `agentsBilan` comme s'il était transverse). |
+| 4. Agents (`agentsBilan`) configurables ? | ❌ **BTP EN DUR** (devis/chantiers/habilitations). Un non-BTP voit quand même « Agent Chantier ». C'est ce moteur qui alimente **le héros de l'accueil**. |
+
+**Le levier (effort Moyen, AUCUNE migration BDD)** : **fusionner `agentsBilan` dans le modèle déjà-générique de `recommandations.js`** (scopé portail) + généraliser `certifs.js` aux échéances → **UN seul moteur de routines paramétrable par métier**. Bonus : le **héros d'accueil devient universel** automatiquement (montre les bons agents selon le métier).
+
+**Timing** : ne bloque PAS le lancement BTP (1ers users = BTP). Mais c'est **l'âme de la vision + enlève une dette (doublon)** → bon candidat comme **fondation de la Gen 2**. *(Plan d'unification détaillé à demander à l'agent.)*
