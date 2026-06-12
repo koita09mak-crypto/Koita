@@ -176,6 +176,7 @@ Si ça n'a pas été vérifié dans le code réel, on le dit. Pas de réassuranc
 - **Travail en équipe = OUI, mais conditionné à l'abonnement** (feature premium → levier de monétisation). *(2026-06-11)* → la RLS de partage org se conçoit DANS la mission Monétisation (paliers gratuit/solo/équipe d'abord, RLS ensuite). Ne pas bricoler avant.
 - **Prochaine grande mission = MONÉTISATION** (après le cœur + la base) : concevoir les paliers (gratuit / solo / équipe), ce qui est gratuit vs payant, et où l'équipe s'active. *(noté 2026-06-11)*
 - AK Univers = **noyau/plateforme** ; les métiers = **modules**. *(2026-06-11)*
+- **Adama = persona n°1 (test case)** *(2026-06-12)* : il a vécu tous les domaines (droit, financement, formation, BTP, créateur) → on construit AK pour transformer SA vie pro d'abord (dogfooding). **« Si ça marche pour moi, ça marchera pour les autres. »** → 3 phases : (1) AK sert Adama [test] → (2) autres users consomment par métier → (3) **futur : users CONSTRUCTEURS** qui structurent leurs propres domaines (plateforme composable). Ne pas sauter les phases.
 - Le **BTP** est le **module pilote** de lancement. *(2026-06-11)*
 - **Finance, Droit, Financement, Diaspora** sont dans le **SOCLE** (partagés). *(2026-06-11)*
 - L'IA est un **moteur qui agit**, pas un chatbot. *(2026-06-11)*
