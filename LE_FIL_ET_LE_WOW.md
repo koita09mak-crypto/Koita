@@ -68,3 +68,22 @@ dispersés » en « 1 assistant qui pense à ta place ».
 ## 4. Prochaine étape
 Creuser **domaine par domaine** : pour chacun, écrire les 2-3 **scénarios WOW concrets** (les connexions
 réelles). Commencer par celui qu'Adama sent le plus. → puis le moteur les exécute (lignes de config).
+
+---
+
+## 5. Domaine DROIT — couche A (valeur user) — scénarios WOW *(défini 12/06)*
+
+Rôle : **AK veille, l'utilisateur n'a pas à connaître le droit.** Tout part de sa **situation réelle**.
+
+| # | Scénario WOW | Connecté à | État |
+|---|---|---|---|
+| 1 | **Documents toujours conformes** (devis/facture : mentions, TVA, statut) | Devis | ✅ commencé |
+| 2 | **Alertes d'obligations AVANT la faute** : plafond micro, URSSAF, RC Pro/décennale à renouveler, habilitation qui expire | Entreprise + Financement | détecteurs (moteur unifié) |
+| 3 | **Clauses intelligentes selon le chantier** : acompte, retard, réserve, garantie | Devis / Contrat | à construire |
+| 4 | **Tes DROITS, pas que tes devoirs** : aides, **recours en cas d'impayé**, médiation | Finances / Financement | à construire |
+| 5 | **Premier réflexe juridique** : question en langage simple → réponse selon statut *(info, pas conseil d'avocat)* | IA | à construire |
+
+**Le fil du Droit** : un devis / un montant / une échéance / un impayé → AK relie le droit aux autres
+domaines **automatiquement**. Plus une rubrique isolée → une **vigilance permanente** portée par le moteur.
+
+*(Rappel : ceci = couche A. Les couches B/plateforme et C/paiement = devoirs d'AK, checklist de lancement, à valider par un juriste — cf. §2 bis.)*
