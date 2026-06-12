@@ -107,3 +107,41 @@ Rôle : **AK ne te laisse jamais passer à côté d'argent auquel tu as droit** 
 **Caveat** : AK oriente/informe, l'**éligibilité finale se confirme auprès de l'organisme** (Pôle Emploi/URSSAF). On détecte et on guide, on ne promet pas.
 
 **Le fil** : se déclenche depuis la situation — création d'entreprise → ACRE · manque de compétence → CPF · impayé → avance · projet → prêt.
+
+---
+
+## 7. Domaine CRÉATEUR DE CONTENU — scénarios WOW *(défini 12/06)*
+
+Rôle : **rendre créateur quelqu'un qui n'y connaît rien** (ne sait ni quoi poster, ni comment, ni les procédures).
+
+| # | WOW | Connecté à |
+|---|---|---|
+| 1 | **Ton travail réel → du contenu** (chantier fini/produit → post, vidéo avant-après) | le métier |
+| 2 | **Il te dit QUOI poster** (idées par métier, jamais la page blanche) | IA |
+| 3 | **Il t'apprend COMMENT** (filmer, accroche, modèles) | Formation |
+| 4 | **Un effort → partout** (Insta/TikTok/LinkedIn/Facebook) | — |
+| 5 | **Le contenu ramène des clients** | Emploi / Marketplace |
+
+**WOW** : *« Tu bosses, AK fait ta com'. »*
+
+## 8. Domaine FORMATION — scénarios WOW *(défini 12/06)*
+
+Rôle : **trouver, financer et réussir** sa formation — **pour TOUS les métiers** — même sans savoir comment s'y prendre.
+
+| # | WOW | Connecté à |
+|---|---|---|
+| 1 | **La bonne formation au bon moment** (suggérée quand un manque bloque, pas un catalogue) | moteur (détecte le manque) |
+| 2 | **Financée** (100% CPF / Pôle Emploi) | Financement |
+| 3 | **Procédures gérées** (inscription, dossier, organisme) | Droit |
+| 4 | **Suivi jusqu'au bout** (progression, certif, habilitation) | Compétences / Droit |
+| 5 | **Tous les métiers** (BTP, transport, commerce, créateur…) | universel |
+
+**WOW** : *« AK sait de quoi tu as besoin avant toi, et te porte jusqu'à la certif. »*
+
+---
+
+## 9. 🔄 LA BOUCLE VERTUEUSE (le cœur du « ça s'interagit dedans » — Adama)
+
+> **Tu bosses** → AK détecte un **manque** → **Formation** (financée **CPF**) → **nouvelle compétence** (+ certif = **Droit**) → **meilleur travail** → **Contenu** (créateur) → **visibilité** → **nouveaux clients** (Emploi) → **plus de travail…**
+
+**AK fait tourner la vie pro en boucle vertueuse** : chaque domaine nourrit le suivant, porté par le moteur de routines. **C'est le wow ultime, et il est universel (tous métiers).** ← LE différenciateur d'AK Univers.
