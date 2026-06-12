@@ -180,7 +180,7 @@ Entreprise · Droit · Financement · Formation · Créateur · Emploi/Marketpla
 **Gaps de connexion par domaine** : Activité ne nourrit ni CV ni Contenu ni Formation · Droit sans escalade réelle · Financement pas déclenché au bon moment · Formation : maillon « manque→formation » absent · Créateur : rien depuis l'Activité · Emploi : CV ne lit pas devis/chantiers.
 
 **Plan de câblage (chacun = 1 détecteur, 0 migration, réutilise l'existant) :**
-- **Étape 1** — **chantier fini → « raconte-le en vidéo » → générateur de script pré-rempli.** L'étincelle la plus spectaculaire ; relie les **2 identités d'Adama** (technicien BTP ↔ Koïta Mak créateur) = dogfooding parfait.
+- **Étape 1** — **chantier fini → « raconte-le en vidéo » → générateur de script pré-rempli.** L'étincelle la plus spectaculaire ; relie les **2 identités d'Adama** (technicien BTP ↔ Koïta Mak créateur) = dogfooding parfait. ✅ **FAIT (12/06)** : détecteur « chantier terminé + rien publié depuis 14j → 🎬 Raconte ton chantier X → GenerateurScript pré-rempli (TikTok) ». Marche **sans clé IA** (pré-remplissage OK, fallback playbook). Garde-fous : pas de harcèlement, pas de bruit, priorité 55.
 - **Étape 2** — **compétence/certif qui expire → formation financée (CPF) → certif** (réutilise `certifs` + `financement.js`, dédoublonne les catalogues).
 - **Étape 3** — **travail → CV auto-rempli (chantiers/devis) → missions** (la boucle revient à l'Emploi).
 
