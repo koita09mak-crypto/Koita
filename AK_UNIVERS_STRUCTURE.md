@@ -20,6 +20,13 @@ Cette promesse **unifie tout** (et tue l'effet « dashboard générique ») :
 
 Tout sert **un seul but : faciliter** (l'esprit Apple « it just works »).
 
+> ### 🧭 Clarification de fond (12/06) — UN moteur universel, pas une app de métier
+> **AK n'est PAS une app de BTP.** C'est **le moteur qui gère les tâches répétitives et les routines de CHAQUE personne, quel que soit son métier.** L'utilisateur dit qui il est (`type_profil`) → AK s'occupe de tout ce qui revient sans cesse dans sa journée. **Le résultat ressenti : « je suis toujours à jour, je n'oublie rien, tout est géré. »**
+> - **Le MOTEUR ne change pas.** Ce qui change d'un utilisateur à l'autre = **ses routines** (selon son métier).
+> - Les « modules » ne sont PAS des produits séparés : ce sont des **métiers / familles de routines** branchés sur le **même** moteur.
+> - **Le BTP = le premier métier PROUVÉ**, pas « le produit ». On prouve le moteur sur le métier qu'Adama maîtrise, **puis on l'ouvre** à tous les profils (freelance, commerçant, créateur de contenu, logistique…). Prouver avant d'élargir.
+> - L'architecture porte **déjà** cette vision : l'onboarding capte le métier, et les agents sont un **moteur de règles universel** (pas du code propre au BTP).
+
 AK Univers est une plateforme propulsée par l'IA qui accompagne chaque personne dans sa vraie vie
 professionnelle — quel que soit son métier — en réunissant au même endroit le travail, l'argent,
 la formation, le droit et la diaspora.
