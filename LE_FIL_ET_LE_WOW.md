@@ -187,3 +187,5 @@ Entreprise · Droit · Financement · Formation · Créateur · Emploi/Marketpla
 - **Étape 3** — **travail → CV auto-rempli (chantiers/devis) → missions** (la boucle revient à l'Emploi). ✅ **FAIT (12/06)** : chantiers → expériences CV en 1 clic + nudge QG. **🔄 BOUCLE VIVANTE** (travail → manque → formation → certif → meilleur travail → contenu → clients → travail). Build vert + 59/59 tests. *(Reste pour densifier : maillon 4 contenu→clients/attribution · twin objectif visé · remplir catalogue SN/AOF/perso · dédoublonner financement.)*
 
 → Construit pas à pas, prouvé, s'affiche sur le QG/accueil. **C'est le passage de « app de devis » à « assistant qui relie tout ».**
+
+> ✅ **BOUCLE COMPLÈTE (12/06) — 4 maillons câblés + attribution prête pour le marketing.** 8 commits prod, build vert + 63/63 tests. **Reste à densifier (sprint finition)** : remplir catalogue (ak/SN/AOF/perso) · dédoublonner financement · twin maillon 2 · écran « D'où viennent mes clients ». **Puis** (PLAN_DE_CONCLUSION) : moteur marketing · qualité+PWA · config+légal → lancer.
