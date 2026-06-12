@@ -124,6 +124,8 @@ Rôle : **rendre créateur quelqu'un qui n'y connaît rien** (ne sait ni quoi po
 
 **WOW** : *« Tu bosses, AK fait ta com'. »*
 
+> **Vision Adama (12/06) — le contenu doit RAPPORTER, pas juste être mesuré.** Deux temps : **(1) MESURER** = l'attribution (maillon 4 : « d'où vient ce client/devis ») = le capteur, la fondation. **(2) DRIVER** = un **moteur marketing actif et robuste** qui fait VENIR les clients (« ce post a ramené 3 clients → refais-en, ce canal, cette heure »), **universel + diaspora**. → On ne peut driver que ce qu'on mesure : maillon 4 d'abord, moteur marketing ensuite (grand chantier post-boucle).
+
 ## 8. Domaine FORMATION — scénarios WOW *(défini 12/06)*
 
 Rôle : **trouver, financer et réussir** sa formation — **pour TOUS les métiers** — même sans savoir comment s'y prendre.
