@@ -82,4 +82,4 @@
 - **Filet de Phase 0 a rattrapé une erreur** : le « grep = 0 import » était faux → 2 consommateurs cachés (`agentLog.js`, `useContenuPortail.js`) migrés AVANT suppression. *(Preuve que tester avant de jeter = vital.)*
 - **49/49 → 47/47 tests, build vert, 0 référence morte. Parité prouvée** (comptes BTP existants inchangés).
 - **Effet** : un non-BTP ne voit plus les agents BTP ; ajouter un métier = **lignes de config**, pas de code. → **AK est désormais structurellement UNIVERSEL.**
-- *Reste parké (Q3)* : seeds catalogue BTP dans le socle — non touché (prudence), chantier dédié plus tard.
+- ✅ **Q3 FAIT (12/06)** : seeds catalogue BTP sortis du socle → **socle 100% métier-agnostique. Moteur universel COMPLET.** (+ maillon 1 de la boucle livré : chantier→contenu, build vert + 50/50 tests.)
