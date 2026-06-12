@@ -181,7 +181,7 @@ Entreprise · Droit · Financement · Formation · Créateur · Emploi/Marketpla
 
 **Plan de câblage (chacun = 1 détecteur, 0 migration, réutilise l'existant) :**
 - **Étape 1** — **chantier fini → « raconte-le en vidéo » → générateur de script pré-rempli.** L'étincelle la plus spectaculaire ; relie les **2 identités d'Adama** (technicien BTP ↔ Koïta Mak créateur) = dogfooding parfait. ✅ **FAIT (12/06)** : détecteur « chantier terminé + rien publié depuis 14j → 🎬 Raconte ton chantier X → GenerateurScript pré-rempli (TikTok) ». Marche **sans clé IA** (pré-remplissage OK, fallback playbook). Garde-fous : pas de harcèlement, pas de bruit, priorité 55.
-- **Étape 2** — **compétence/certif qui expire → formation financée (CPF) → certif** (réutilise `certifs` + `financement.js`, dédoublonne les catalogues). ⚠️ **Universel, pas que l'habilitation BTP** : le déclencheur « besoin de formation » = 1 détecteur PAR métier (habilitation = le cas BTP) ; catalogue formations doit prévoir interne+externe, France+Sénégal/AOF, + formations propres de l'user.
+- **Étape 2** — **compétence/certif qui expire → formation financée (CPF) → certif**. ✅ **FAIT (12/06)** : **universel, config par métier, catalogue extensible** (zone SN/AOF + source perso à remplir). 3 maillons vivants, build vert + 55/55 tests. *(reste : dédoublonner les 2 catalogues financement, remplir le catalogue multi-pays/perso, twin « objectif visé ».)*
 - **Étape 3** — **travail → CV auto-rempli (chantiers/devis) → missions** (la boucle revient à l'Emploi).
 
 → Construit pas à pas, prouvé, s'affiche sur le QG/accueil. **C'est le passage de « app de devis » à « assistant qui relie tout ».**
