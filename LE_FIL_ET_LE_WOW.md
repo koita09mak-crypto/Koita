@@ -145,3 +145,28 @@ Rôle : **trouver, financer et réussir** sa formation — **pour TOUS les méti
 > **Tu bosses** → AK détecte un **manque** → **Formation** (financée **CPF**) → **nouvelle compétence** (+ certif = **Droit**) → **meilleur travail** → **Contenu** (créateur) → **visibilité** → **nouveaux clients** (Emploi) → **plus de travail…**
 
 **AK fait tourner la vie pro en boucle vertueuse** : chaque domaine nourrit le suivant, porté par le moteur de routines. **C'est le wow ultime, et il est universel (tous métiers).** ← LE différenciateur d'AK Univers.
+
+---
+
+## 10. Domaines restants — scénarios WOW *(définis 12/06)*
+
+### ENTREPRISE (le cockpit)
+Rôle : piloter sa boîte sans voler à l'aveugle. Santé (CA/encaissé/plafond/rentabilité) · alertes statut/obligations · guide création/passage au réel · rentabilité par type de presta.
+**WOW** : *« AK surveille la santé de ta boîte à ta place. »* → Droit + Financement + Finances.
+
+### EMPLOI / MARKETPLACE
+Rôle : ne pas attendre le travail. Chantiers/missions adaptés (métier+zone) · le contenu ramène des clients · sous-traitance · missions France↔AOF.
+**WOW** : *« AK te ramène le travail, tu ne le cherches plus. »* → Créateur + Diaspora + profil.
+
+### DIASPORA (angle UNIQUE)
+Rôle : pont France ↔ Afrique de l'Ouest. Gérer 2 marchés d'un endroit (devises, fuseaux) · projets au pays à distance · transferts/financement (mobile money) · normes FR appliquées en AOF.
+**WOW** : *« Le seul outil pour celui qui vit et travaille entre deux continents. »* ← personne d'autre.
+
+### TANGIBLE (QR / scan / colis / logistique)
+Rôle : l'opérationnel concret = preuve de sérieux. QR sur devis/facture/chantier · suivi matériaux/colis/livraisons · transport.
+**WOW** : *« Du palpable — AK n'est pas un jouet, c'est un vrai outil de terrain. »*
+
+---
+
+## ✅ CARTE COMPLÈTE — 8 domaines définis
+Entreprise · Droit · Financement · Formation · Créateur · Emploi/Marketplace · Diaspora · Tangible — tous reliés par **la boucle vertueuse** (§9) et le **moteur de routines unifié**. Persona n°1 = **Adama** (test sur son cas réel d'abord). → Prochaine étape : **audit dans le projet** (ce qui existe vs ces scénarios wow) avant de construire.
