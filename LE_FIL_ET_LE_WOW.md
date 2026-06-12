@@ -188,4 +188,4 @@ Entreprise · Droit · Financement · Formation · Créateur · Emploi/Marketpla
 
 → Construit pas à pas, prouvé, s'affiche sur le QG/accueil. **C'est le passage de « app de devis » à « assistant qui relie tout ».**
 
-> ✅ **BOUCLE COMPLÈTE (12/06) — 4 maillons câblés + attribution prête pour le marketing.** 8 commits prod, build vert + 63/63 tests. **Reste à densifier (sprint finition)** : remplir catalogue (ak/SN/AOF/perso) · dédoublonner financement · twin maillon 2 · écran « D'où viennent mes clients ». **Puis** (PLAN_DE_CONCLUSION) : moteur marketing · qualité+PWA · config+légal → lancer.
+> ✅ **BOUCLE COMPLÈTE (12/06) — 4 maillons + twin câblés + attribution prête pour le marketing.** Tests 38→70 sur la session. **Sprint de finition FAIT** : catalogue formation complet (interne/externe/perso · **FR/SN/AOF** = diaspora) · financement à **source unique** · twin (manque de compétence) · écran attribution (capture→mesure→visualisation→action). **Reste** (PLAN_DE_CONCLUSION) : **cockpit marketing** (= moteur marketing d'Adama, fondation posée via `attributionParCanal`) · qualité+PWA · config+légal → lancer.
