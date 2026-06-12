@@ -170,3 +170,18 @@ Rôle : l'opérationnel concret = preuve de sérieux. QR sur devis/facture/chant
 
 ## ✅ CARTE COMPLÈTE — 8 domaines définis
 Entreprise · Droit · Financement · Formation · Créateur · Emploi/Marketplace · Diaspora · Tangible — tous reliés par **la boucle vertueuse** (§9) et le **moteur de routines unifié**. Persona n°1 = **Adama** (test sur son cas réel d'abord). → Prochaine étape : **audit dans le projet** (ce qui existe vs ces scénarios wow) avant de construire.
+
+---
+
+## 11. AUDIT PROJET + PLAN DE CÂBLAGE DE LA BOUCLE (agent, 12/06)
+
+**Constat décisif** : chaque domaine est **riche à l'intérieur** (tout existe), MAIS les **connexions inter-domaines manquent** (le fil/la boucle). Un `event_bus` était prévu pour ça → **dormant** (jamais émis). Le seul véhicule vivant = le **moteur unifié** (moteurEcheances/detecteurs). → **Le wow = relier, pas reconstruire.**
+
+**Gaps de connexion par domaine** : Activité ne nourrit ni CV ni Contenu ni Formation · Droit sans escalade réelle · Financement pas déclenché au bon moment · Formation : maillon « manque→formation » absent · Créateur : rien depuis l'Activité · Emploi : CV ne lit pas devis/chantiers.
+
+**Plan de câblage (chacun = 1 détecteur, 0 migration, réutilise l'existant) :**
+- **Étape 1** — **chantier fini → « raconte-le en vidéo » → générateur de script pré-rempli.** L'étincelle la plus spectaculaire ; relie les **2 identités d'Adama** (technicien BTP ↔ Koïta Mak créateur) = dogfooding parfait.
+- **Étape 2** — **compétence/certif qui expire → formation financée (CPF) → certif** (réutilise `certifs` + `financement.js`, dédoublonne les catalogues).
+- **Étape 3** — **travail → CV auto-rempli (chantiers/devis) → missions** (la boucle revient à l'Emploi).
+
+→ Construit pas à pas, prouvé, s'affiche sur le QG/accueil. **C'est le passage de « app de devis » à « assistant qui relie tout ».**
