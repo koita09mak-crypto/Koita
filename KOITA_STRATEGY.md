@@ -118,6 +118,10 @@ AOF :
 - [x] Axe digital concrétisé en produit : **SaaS BTP** (repo `AK_Digital_BTP` / module `06_SaaS_BTP`)
 - [x] Parti pris produit : **menu universel adaptatif par métier** (artisan BTP → Devis / Chantiers / Équipe ; ménage → Prestations / Ménages / Équipe) — accueil épuré, mobile-first
 - [x] Déploiement : **Vercel** (CI + tests automatisés sur le repo de l'app)
+- [x] **Structure juridique : UNE seule micro-entreprise française, multi-activités** (PAS 3 entreprises). SaaS + BTP = **2 activités sous 1 SIRET**, pas 2 structures. *(2026-06-13)*
+- [x] **Ordre d'immatriculation revu** : s'immatriculer **d'abord sur l'activité NUMÉRIQUE / SaaS** (non réglementée → **aucun diplôme requis** → débloque l'immatriculation tout de suite, sans attendre la qualif BTP). Le **BTP** (réglementé : **diplôme OU 3 ans d'expérience**) = **activité secondaire ajoutée plus tard**. *(2026-06-13)*
+- [x] **Entité AOF / sénégalaise = DÉFÉRÉE** : la micro FR **vend déjà** à la diaspora/AOF (abonnements SaaS + conseil/assistance à distance, facturés depuis la France). Structure locale **seulement plus tard**, si **présence physique** en AOF OU **encaissement mobile money local** (compte marchand). *(2026-06-13)*
+- [x] **Paiement séquencé par marché** : Stripe (France/Europe) **déjà fonctionnel** pour lancer ; **mobile money AOF (Wave/CinetPay) = phase 2 du paiement**, conditionné au compte marchand (donc à l'immatriculation). *(2026-06-13)*
 
 ---
 
@@ -129,7 +133,8 @@ AOF :
 | Appeler Pôle Emploi — ACRE | URGENTE | À faire |
 | Cartographier réseau AOF | HAUTE | À démarrer |
 | Créer profil LinkedIn pro | HAUTE | À faire |
-| Créer auto-entreprise | HAUTE | Après formation |
+| Créer micro-entreprise sur l'activité **NUMÉRIQUE** d'abord (ACRE avant) | HAUTE | À faire — ne dépend plus de la qualif BTP |
+| Ajouter le BTP en 2e activité (diplôme La Solive OU 3 ans d'expérience) | MOYENNE | Plus tard |
 | SaaS BTP — module simplification (menu universel) | MOYENNE | Terminé (PR #2, tests verts, déploiement Vercel) |
 | SaaS BTP — définir le 1er client test réel | MOYENNE | À cadrer (éviter dispersion) |
 
@@ -153,6 +158,9 @@ AOF :
 - Certifications déjà obtenues (habilitation élec, etc.) ?
 - Exemption stage CMA possible ? (expérience terrain à justifier)
 - Disponibilité du nom de domaine ak-reseaux-batiment.fr ou akbtp.fr ?
+- **BTP — voie « 3 ans d'expérience »** (élec/télécoms/câblage) : suffit-elle pour ajouter l'activité BTP sans diplôme ? → à confirmer **CMA / URSSAF / guichet INPI** (éviterait d'attendre La Solive).
+- **Mobile money AOF** : peut-on encaisser Wave/Orange Money **sans entité locale** (agrégateur cross-border type CinetPay/PayDunya), ou faut-il une structure sénégalaise ? → à vérifier.
+- **NAF d'immatriculation** : confirmer le code de l'activité numérique principale (ex. 6201Z programmation / 5829 édition logiciel / 6202A conseil) — le BTP 4321A devient secondaire.
 
 ---
 
