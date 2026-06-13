@@ -1,5 +1,5 @@
 # Mémoire Stratégique — Adama Koita
-> Dernière mise à jour : 2026-05-09
+> Dernière mise à jour : 2026-06-13 (nuit — micro-entreprise DÉPOSÉE + app SaaS fonctionnelle, paiement + IA en test)
 > À mettre à jour après chaque session significative
 
 ---
@@ -9,7 +9,8 @@
 | Champ | Info |
 |-------|------|
 | Nom | Adama Koita |
-| Statut | Demandeur d'emploi |
+| Statut | Demandeur d'emploi (**plus de droit ARE** — épuisé) → **micro-entrepreneur** (micro **déposée le 13/06/2026**, SIRET en attente) |
+| Entreprise | Micro / entreprise individuelle · activité **numérique** (Services d'information / hébergement de données) · nom commercial **AK Univers** · domiciliée Paris 11e (Rue Oberkampf) · forme **commerciale (BIC ~21 %)** |
 | Budget départ | 200€ |
 | Formation en cours | Objectif La Solive (BTP) |
 | Expérience terrain | Électricité, télécoms, câblage, réseaux, bâtiment neuf, installations techniques, génie civil (bases) |
@@ -115,6 +116,16 @@ AOF :
 - [x] Code NAF : 4321A (Travaux d'installation électrique dans tous locaux)
 - [x] Stratégie assurance : RC Pro seule en Phase 1 (courants faibles) → ajouter décennale Phase 2
 - [x] Multi-activités dès le départ (câblage, réseaux, alarme, assistance technique, digital)
+- [x] Axe digital concrétisé en produit : **SaaS BTP** (repo `AK_Digital_BTP` / module `06_SaaS_BTP`)
+- [x] Parti pris produit : **menu universel adaptatif par métier** (artisan BTP → Devis / Chantiers / Équipe ; ménage → Prestations / Ménages / Équipe) — accueil épuré, mobile-first
+- [x] Déploiement : **Vercel** (CI + tests automatisés sur le repo de l'app)
+- [x] **Structure juridique : UNE seule micro-entreprise française, multi-activités** (PAS 3 entreprises). SaaS + BTP = **2 activités sous 1 SIRET**, pas 2 structures. *(2026-06-13)*
+- [x] **Ordre d'immatriculation revu** : s'immatriculer **d'abord sur l'activité NUMÉRIQUE / SaaS** (non réglementée → **aucun diplôme requis** → débloque l'immatriculation tout de suite, sans attendre la qualif BTP). Le **BTP** (réglementé : **diplôme OU 3 ans d'expérience**) = **activité secondaire ajoutée plus tard**. *(2026-06-13)*
+- [x] **Entité AOF / sénégalaise = DÉFÉRÉE** : la micro FR **vend déjà** à la diaspora/AOF (abonnements SaaS + conseil/assistance à distance, facturés depuis la France). Structure locale **seulement plus tard**, si **présence physique** en AOF OU **encaissement mobile money local** (compte marchand). *(2026-06-13)*
+- [x] **Paiement séquencé par marché** : Stripe (France/Europe) **déjà fonctionnel** pour lancer ; **mobile money AOF (Wave/CinetPay) = phase 2 du paiement**, conditionné au compte marchand (donc à l'immatriculation). *(2026-06-13)*
+- [x] **Nom commercial à l'immatriculation : AK Univers** (la plateforme/app). « AK Réseaux & Bâtiment » reste l'identité **BTP**, à réutiliser quand le BTP sera ajouté en 2e activité. *(2026-06-13)*
+- [x] **Activité d'immatriculation = NUMÉRIQUE** (Services d'information / Traitement de données, hébergement → forme commerciale BIC). Le **NAF 4321A (BTP) n'est plus le principal** → deviendra l'activité secondaire. *(2026-06-13)*
+- [x] **Versement libératoire de l'impôt = NON** (Adama non imposable en l'état → éviter de payer un impôt non dû ; réversible chaque année). *(2026-06-13)*
 
 ---
 
@@ -123,10 +134,16 @@ AOF :
 | Action | Priorité | Statut |
 |--------|----------|--------|
 | Finir formation Objectif La Solive | URGENTE | En cours |
-| Appeler Pôle Emploi — ACRE | URGENTE | À faire |
+| **Recevoir le SIRET** (par email, qq jours) | HAUTE | En attente |
+| **Déposer ACRE à l'URSSAF** (≤ 45 j, avant ~28/07) — via espace autoentrepreneur.urssaf.fr + attestation demandeur d'emploi (France Travail) | URGENTE | Dès réception SIRET — Claude guidera |
+| Vérifier validité du justificatif de domiciliation envoyé (< 3 mois, à son nom, bonne adresse) | MOYENNE | À confirmer |
 | Cartographier réseau AOF | HAUTE | À démarrer |
 | Créer profil LinkedIn pro | HAUTE | À faire |
-| Créer auto-entreprise | HAUTE | Après formation |
+| Créer micro-entreprise sur l'activité **NUMÉRIQUE** d'abord (ACRE avant) | HAUTE | ✅ **DÉPOSÉE le 13/06** (entreprise individuelle, n° formalité J00250658754) |
+| **Déposer la demande d'ACRE à l'URSSAF** (dans les 45 j → avant ~28/07/2026) | URGENTE | À faire après réception SIRET |
+| Ajouter le BTP en 2e activité (diplôme La Solive OU 3 ans d'expérience) | MOYENNE | Plus tard |
+| SaaS BTP — module simplification (menu universel) | MOYENNE | Terminé (PR #2, tests verts, déploiement Vercel) |
+| SaaS BTP — définir le 1er client test réel | MOYENNE | À cadrer (éviter dispersion) |
 
 ---
 
@@ -137,6 +154,12 @@ AOF :
 - Formation : Objectif La Solive ✓
 - Zone géographique : France + Afrique de l'Ouest ✓
 - Priorité stratégique : D (trois axes en parallèle) ✓
+- **Structure : UNE micro-entreprise FR multi-activités** (pas 3 entreprises) ✓ *(13/06)*
+- **Immatriculation : déposée le 13/06** sur l'activité **numérique** (entreprise individuelle, AK Univers) ✓
+- **Droit ARE : épuisé** (plus de droit) → donc pas d'ARE/ARCE à gérer ✓
+- **Imposable : non** → versement libératoire = Non ✓
+- **Domiciliation : Paris 11e** (Rue Oberkampf) ✓
+- **Diplôme BTP non requis** pour l'activité numérique (réglementation ne concerne que le BTP) ✓
 
 ---
 
@@ -148,6 +171,11 @@ AOF :
 - Certifications déjà obtenues (habilitation élec, etc.) ?
 - Exemption stage CMA possible ? (expérience terrain à justifier)
 - Disponibilité du nom de domaine ak-reseaux-batiment.fr ou akbtp.fr ?
+- **BTP — voie « 3 ans d'expérience »** (élec/télécoms/câblage) : suffit-elle pour ajouter l'activité BTP sans diplôme ? → à confirmer **CMA / URSSAF / guichet INPI** (éviterait d'attendre La Solive).
+- **Mobile money AOF** : peut-on encaisser Wave/Orange Money **sans entité locale** (agrégateur cross-border type CinetPay/PayDunya), ou faut-il une structure sénégalaise ? → à vérifier.
+- **NAF d'immatriculation** : confirmer le code de l'activité numérique principale (ex. 6201Z programmation / 5829 édition logiciel / 6202A conseil) — le BTP 4321A devient secondaire.
+- **Justificatif de domiciliation** : le document envoyé au guichet est-il valide (daté < 3 mois, au nom d'Adama, même adresse que l'établissement) ? Type de document à confirmer (facture / quittance / attestation d'hébergement). Risque = demande de complément, pas refus définitif.
+- **Date de création de l'app / 1er client test réel** : qui sera le tout 1er abonné payant réel (hors Adama) ?
 
 ---
 
@@ -163,3 +191,19 @@ AOF :
 - Choix forme juridique : micro-entreprise, code NAF 4321A
 - Stratégie assurance séquencée (RC Pro seule → décennale Phase 2)
 - Création fichier ENTREPRISE_SETUP.md (configuration complète, checklist, modèle facture, tarifs)
+
+### Session 3 — 2026-06-13 (soir)
+- **🏛️ MICRO-ENTREPRISE DÉPOSÉE** (guichet INPI) : entreprise individuelle, activité **numérique** (Services d'information / Traitement de données, hébergement), nom commercial **AK Univers**, adresse Paris 11e, **forme commerciale (BIC ~21 %)**, versement libératoire **Non** (non imposable). Frais greffe **7,63 €**. N° formalité J00250658754. → SIRET à venir par email. ⚠️ **ACRE à déposer à l'URSSAF sous 45 j (~28/07).**
+- **Axe digital — l'app SaaS BTP devient fonctionnelle de bout en bout.** Grosse session de finition + config.
+- **Code v1 bouclé** : simplification (menu universel par métier), mode démo, refonte landing + prix (3 paliers, IA invisible, multi-métiers, multi-façade), sécurité/cockpit fondateur (RLS, zéro fuite prouvé), qualité 2026 + PWA (app installable, Lighthouse 100, 18 écrans propres).
+- **Décisions produit actées** : IA invisible (philosophie Apple) · cible universelle (tous métiers, BTP = ancre/preuve) · multi-façade (web d'abord, PWA) · grille de prix (Pro 29 €/Équipe 49 €, FCFA pour l'AOF, 100 fondateurs −30 %).
+- **Config live (mode test) faite par Adama, guidée pas à pas** : clé IA Anthropic posée → IA réelle marche ; Stripe (produits, secrets, webhook) → **paiement test réussi → abonnement Pro activé** automatiquement. Un vrai piège d'API Stripe debuggé (current_period sur items + idempotence).
+- **Reste (non bloquant)** : nettoyage Stripe (webhook dupliqué), durcir idempotence, Wave/CinetPay, passage en live + remise fondateurs, légal (CGU/CGV/RGPD par juriste), domaine.
+- **Rappel** : la priorité Phase 1 terrain (RDV Pôle Emploi / ACRE, immatriculation) reste ouverte en parallèle.
+
+### Session 2 — 2026-06-13
+- Point d'avancement sur l'**axe digital** (axe 3 du plan) : développement d'une app **SaaS BTP** (`AK_Digital_BTP` / `06_SaaS_BTP`)
+- Bouclage du **module de simplification** : accueil épuré + **menu universel adaptatif par métier** (BTP artisan vs ménage), pensé mobile-first
+- Validation technique : suite de tests verte, CI active, déploiement sur **Vercel** (PR #2 sur le repo de l'app)
+- Mise à jour de la stratégie pour acter le produit digital et son parti pris UX
+- ⚠️ Vigilance posée : l'axe digital prend de l'avance pendant que la **Phase 1 terrain** (ACRE, immatriculation, LinkedIn, réseau AOF) reste ouverte → garder 1 focus principal pour éviter le risque de dispersion (risque n°1 du tableau)
