@@ -1,5 +1,5 @@
 # Mémoire Stratégique — Adama Koita
-> Dernière mise à jour : 2026-05-09
+> Dernière mise à jour : 2026-06-13
 > À mettre à jour après chaque session significative
 
 ---
@@ -115,6 +115,9 @@ AOF :
 - [x] Code NAF : 4321A (Travaux d'installation électrique dans tous locaux)
 - [x] Stratégie assurance : RC Pro seule en Phase 1 (courants faibles) → ajouter décennale Phase 2
 - [x] Multi-activités dès le départ (câblage, réseaux, alarme, assistance technique, digital)
+- [x] Axe digital concrétisé en produit : **SaaS BTP** (repo `AK_Digital_BTP` / module `06_SaaS_BTP`)
+- [x] Parti pris produit : **menu universel adaptatif par métier** (artisan BTP → Devis / Chantiers / Équipe ; ménage → Prestations / Ménages / Équipe) — accueil épuré, mobile-first
+- [x] Déploiement : **Vercel** (CI + tests automatisés sur le repo de l'app)
 
 ---
 
@@ -127,6 +130,8 @@ AOF :
 | Cartographier réseau AOF | HAUTE | À démarrer |
 | Créer profil LinkedIn pro | HAUTE | À faire |
 | Créer auto-entreprise | HAUTE | Après formation |
+| SaaS BTP — module simplification (menu universel) | MOYENNE | Terminé (PR #2, tests verts, déploiement Vercel) |
+| SaaS BTP — définir le 1er client test réel | MOYENNE | À cadrer (éviter dispersion) |
 
 ---
 
@@ -163,3 +168,10 @@ AOF :
 - Choix forme juridique : micro-entreprise, code NAF 4321A
 - Stratégie assurance séquencée (RC Pro seule → décennale Phase 2)
 - Création fichier ENTREPRISE_SETUP.md (configuration complète, checklist, modèle facture, tarifs)
+
+### Session 2 — 2026-06-13
+- Point d'avancement sur l'**axe digital** (axe 3 du plan) : développement d'une app **SaaS BTP** (`AK_Digital_BTP` / `06_SaaS_BTP`)
+- Bouclage du **module de simplification** : accueil épuré + **menu universel adaptatif par métier** (BTP artisan vs ménage), pensé mobile-first
+- Validation technique : suite de tests verte, CI active, déploiement sur **Vercel** (PR #2 sur le repo de l'app)
+- Mise à jour de la stratégie pour acter le produit digital et son parti pris UX
+- ⚠️ Vigilance posée : l'axe digital prend de l'avance pendant que la **Phase 1 terrain** (ACRE, immatriculation, LinkedIn, réseau AOF) reste ouverte → garder 1 focus principal pour éviter le risque de dispersion (risque n°1 du tableau)
