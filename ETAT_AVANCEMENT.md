@@ -76,3 +76,11 @@
   - On entre par **plusieurs portes** (même noyau / même Supabase) : 🌐 **Web** = porte principale, **déjà live sur Vercel**, rien à installer · 📱 **Mobile** = la même app **installable en PWA** (pas de native séparée) · 🤖 **Bots/canaux** (Discord/Telegram/WhatsApp).
   - Dedans = de **vrais produits**, pas juste des écrans. Ex. à montrer : le **CV en ligne auto-rempli** (chantiers/devis → CV partageable → missions), maillon de la boucle (Emploi).
   - ⛔ La landing ne doit **jamais** réduire AK à « une appli mobile ». Dire : « sur le web, rien à installer · aussi sur ton téléphone ». *(2026-06-13)*
+- **Grille de prix actée — 3 paliers, ancrée sur la valeur** *(2026-06-13)* :
+  - **Gratuit** : 3 devis + 3 factures/mois · 5 clients · alertes (coût zéro) · 1 user → l'habitude.
+  - **Pro** : **29 €/mois** (290 €/an) · **5 000 FCFA/mois** (AOF) → illimité, tous les agents, la boucle, 1 user.
+  - **Équipe** : **49 €/mois** (490 €/an) · **12 000 FCFA/mois** (AOF) → jusqu'à 5 users, rôles/partage, rapports avancés.
+  - **Leviers** : **100 membres fondateurs = −30 % à vie** · **annuel = 2 mois offerts** · **essai 14 j Pro**.
+  - **AOF = prix LOCAL** (mobile money **Wave** + Orange Money), pas une conversion du prix FR.
+  - **Raison** : marge IA 96-98 % → le coût n'est pas le frein ; on price sur la **valeur/ROI** (AK fait plus que des concurrents à 30-50 €). L'accessibilité passe par **fondateurs + gratuit généreux**, jamais par un prix cassé (19 € = sous-vendre + signal « moins bien »).
+  - **Conséquence code** : fondre les **4 paliers codés** (Free/Pro/Business/Enterprise) **→ 3** (Gratuit/Pro/Équipe). Garder Pro = 29 € (produit Stripe inchangé) ; collapse Business/Enterprise → Équipe. **Aligner `lib/plans.js` + Stripe AVANT la mise en ligne** (prix affiché = prix facturé). *(2026-06-13)*
