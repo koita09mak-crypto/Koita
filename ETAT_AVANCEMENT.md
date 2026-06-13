@@ -67,3 +67,8 @@
   - Comme l'iPhone : bourré d'IA, mais les gens utilisent juste *un outil qui marche*. Ils ne pensent pas « j'utilise une IA », ils pensent « ça marche / ça m'a fait gagner du temps ».
   - Conséquence façade : bannir « IA », « intelligence », « plateforme universelle », « agents » → toujours le **bénéfice métier concret**. L'« effet IA » se **vit** à l'usage, il ne s'**annonce** pas.
   - (Le « certains ont peur de l'IA » n'est qu'une conséquence parmi d'autres — la vraie raison est la philosophie produit : respecter le réel, l'IA reste invisible.) *(2026-06-13)*
+- **Cible = TOUS les métiers / indépendants, pas le BTP seul** *(positionnement, vaut PARTOUT)* :
+  - L'app vise **tous ceux qui bossent à leur compte** : bâtiment, **transport, logistique**, ménage, commerce, créateur, diaspora… (tous les portails du projet).
+  - **BTP = module pilote + preuve + ancre d'Adama** (sa force, la porte d'entrée) — **JAMAIS la cible exclusive.** ⛔ Interdit en façade : « l'appli des artisans du bâtiment » ou toute formule qui réduit au bâtiment.
+  - La promesse est **universelle mais formulée concret/inclusif** : « ton activité », « ton métier », « quel que soit ton métier » — **PAS** le mot « plateforme universelle » (abstraction bannie).
+  - Méthode : la promesse parle à tous · le BTP apparaît comme **exemple/preuve concrète** · les autres métiers sont **montrés** (visibles, pas vendus comme finis). *(2026-06-13)*
