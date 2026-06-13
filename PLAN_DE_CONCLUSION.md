@@ -6,6 +6,17 @@
 
 ---
 
+## 🧭 ORDRE D'EXÉCUTION ACTUALISÉ (13/06) — UN à la fois, prouvé
+1. **Finir la SIMPLIFICATION** (accueil + menu, **vocabulaire par métier**, maquette non-BTP) — cœur de l'expérience, en cours.
+2. **MODE DÉMO populé** — sentir l'app + amener le « aha » (cf. `RETENTION_ET_PRIX.md`).
+3. **REFONTE LANDING** — vendre le RÉSULTAT pas l'IA (cf. décision positionnement).
+4. **RÔLES / cockpit fondateur** — les 5 points (cf. audit rôles ci-dessous).
+5. **Qualité + PWA** (mobile installable).
+6. **Config + légal → LANCER.**
+> Anti-dispersion (règle d'Adama) : on ne démarre pas le suivant avant que le précédent soit **fini + prouvé**.
+
+---
+
 ## ✅ DÉJÀ FAIT (socle solide, 11-12/06)
 - **Accueil** refondu (3 zones, héros agents, honnête).
 - **Cœur métier** : devis/factures multi-taux conformes, clients, paiement — **prouvé sur du réel**.
