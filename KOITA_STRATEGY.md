@@ -1,5 +1,5 @@
 # Mémoire Stratégique — Adama Koita
-> Dernière mise à jour : 2026-06-13
+> Dernière mise à jour : 2026-06-13 (soir — app SaaS BTP : paiement + IA fonctionnels en test)
 > À mettre à jour après chaque session significative
 
 ---
@@ -168,6 +168,14 @@ AOF :
 - Choix forme juridique : micro-entreprise, code NAF 4321A
 - Stratégie assurance séquencée (RC Pro seule → décennale Phase 2)
 - Création fichier ENTREPRISE_SETUP.md (configuration complète, checklist, modèle facture, tarifs)
+
+### Session 3 — 2026-06-13 (soir)
+- **Axe digital — l'app SaaS BTP devient fonctionnelle de bout en bout.** Grosse session de finition + config.
+- **Code v1 bouclé** : simplification (menu universel par métier), mode démo, refonte landing + prix (3 paliers, IA invisible, multi-métiers, multi-façade), sécurité/cockpit fondateur (RLS, zéro fuite prouvé), qualité 2026 + PWA (app installable, Lighthouse 100, 18 écrans propres).
+- **Décisions produit actées** : IA invisible (philosophie Apple) · cible universelle (tous métiers, BTP = ancre/preuve) · multi-façade (web d'abord, PWA) · grille de prix (Pro 29 €/Équipe 49 €, FCFA pour l'AOF, 100 fondateurs −30 %).
+- **Config live (mode test) faite par Adama, guidée pas à pas** : clé IA Anthropic posée → IA réelle marche ; Stripe (produits, secrets, webhook) → **paiement test réussi → abonnement Pro activé** automatiquement. Un vrai piège d'API Stripe debuggé (current_period sur items + idempotence).
+- **Reste (non bloquant)** : nettoyage Stripe (webhook dupliqué), durcir idempotence, Wave/CinetPay, passage en live + remise fondateurs, légal (CGU/CGV/RGPD par juriste), domaine.
+- **Rappel** : la priorité Phase 1 terrain (RDV Pôle Emploi / ACRE, immatriculation) reste ouverte en parallèle.
 
 ### Session 2 — 2026-06-13
 - Point d'avancement sur l'**axe digital** (axe 3 du plan) : développement d'une app **SaaS BTP** (`AK_Digital_BTP` / `06_SaaS_BTP`)

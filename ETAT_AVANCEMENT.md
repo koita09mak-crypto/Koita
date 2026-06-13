@@ -45,12 +45,17 @@
 - [x] **Passe de finition qualité 2026** ✅ (13/06) — P2 états : skeleton + « Réessayer » sur **18 écrans** + bug chargement infini corrigé · P3 cohérence : audit honnête (déjà cohérent), 1 gain (Tâches → EmptyState) · **accessibilité 88 → 100** · Lighthouse **100 BP/SEO**. Build vert, 113/113 tests, COLORS réutilisé, zéro touche schéma/prix/sécurité.
 - [x] **PWA / mobile** ✅ (13/06) — manifest (description corrigée : sans IA/jargon) + icônes 192/512 maskable + service worker (ne casse jamais le live Supabase) → **app installable Android + iPhone**, build vert, 113/113 tests. (Preuve objective via audit Lighthouse PWA sur l'URL déployée.)
 - [ ] **Squelettes des autres modules** (Services à domicile, Transport, Créateur) : entrée + « Bientôt disponible »
+- [x] **IA activée** ✅ (13/06) — `ANTHROPIC_API_KEY` posée dans les secrets Supabase → IA réelle fonctionne (copilote contextuel qui lit le compte). Plafond crédit posé côté console Anthropic.
+- [x] **Paiement Stripe (mode TEST) fonctionnel de bout en bout** ✅ (13/06) — produits AK Pro 29 € / AK Équipe 49 € créés, 4 secrets posés (`STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICE_PRO`, `STRIPE_PRICE_BUSINESS`), webhook branché. Test carte `4242…` → **paiement réussi → abonnement Pro ACTIF confirmé** (notif « Abonnement Pro activé », quota IA Pro 50 000 tokens débloqué). Correctif appliqué : webhook **tolérant aux 2 versions d'API Stripe** (`current_period_start/end` déplacés sur les items dans l'API « basil » 2025+).
 - [ ] **Config des clés** : `.env.example` documenté (Supabase, Stripe, Wave, CinetPay, IA)
 - [ ] **Remise −30 % fondateurs — branchement paiement réel** (à faire en phase config paiement, AVANT lancement) : app-side ✅ (validation/tracking/plafond 100). Reste : ① créer un **coupon Stripe −30 % « forever »** + ② **diff `stripe-checkout`** (Edge Function : lire le code promo → appliquer le coupon, l'agent prépare et montre avant déploiement) + ③ Wave/CinetPay : −30 % au checkout.
 - [ ] **Légal** : CGU / CGV / confidentialité / RGPD → valider par un juriste
 - [ ] **Bots / canaux** (Discord/Telegram/WhatsApp) — `replit_bot.py` comme base
 - [ ] **(Durcissement futur, post-lancement) Infra de test d'intégration RLS** — un Postgres de test qui rejoue chaque acteur (user/abonné/équipe/admin) pour garder la sécurité non-régressée à l'échelle. Pas requis pour lancer ; à cadrer plus tard.
 - [ ] **(Polish optionnel) Accessibilité des écrans `/app` connectés** — le 100 a11y est mesuré sur la landing publique ; une passe a11y dédiée sur les pages connectées + finir les loaders inline (Diaspora/Emploi). Non bloquant.
+- [ ] **Nettoyage Stripe + robustesse webhook** : supprimer le webhook **dupliqué `dynamic-rhythm`** (100 % erreur, ancien, mauvaise clé de signature). Durcir l'**idempotence** (enregistrer la clé anti-rejeu APRÈS traitement réussi, pas avant). Commit + push le correctif `stripe-webhook` sur `main` (parité repo/déployé).
+- [ ] **Wave / CinetPay** (mobile money AOF) — même logique que Stripe, à activer (comptes + secrets).
+- [ ] **Passage en LIVE** (le moment venu) : remplacer les clés **test** Stripe par les clés **live** + recréer le webhook live + brancher la remise **−30 % fondateurs** (coupon Stripe + diff `stripe-checkout`).
 
 ---
 
