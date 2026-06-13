@@ -72,3 +72,7 @@
   - **BTP = module pilote + preuve + ancre d'Adama** (sa force, la porte d'entrée) — **JAMAIS la cible exclusive.** ⛔ Interdit en façade : « l'appli des artisans du bâtiment » ou toute formule qui réduit au bâtiment.
   - La promesse est **universelle mais formulée concret/inclusif** : « ton activité », « ton métier », « quel que soit ton métier » — **PAS** le mot « plateforme universelle » (abstraction bannie).
   - Méthode : la promesse parle à tous · le BTP apparaît comme **exemple/preuve concrète** · les autres métiers sont **montrés** (visibles, pas vendus comme finis). *(2026-06-13)*
+- **AK n'est PAS « une app mobile » — multi-façade à assumer en façade** *(positionnement)* :
+  - On entre par **plusieurs portes** (même noyau / même Supabase) : 🌐 **Web** = porte principale, **déjà live sur Vercel**, rien à installer · 📱 **Mobile** = la même app **installable en PWA** (pas de native séparée) · 🤖 **Bots/canaux** (Discord/Telegram/WhatsApp).
+  - Dedans = de **vrais produits**, pas juste des écrans. Ex. à montrer : le **CV en ligne auto-rempli** (chantiers/devis → CV partageable → missions), maillon de la boucle (Emploi).
+  - ⛔ La landing ne doit **jamais** réduire AK à « une appli mobile ». Dire : « sur le web, rien à installer · aussi sur ton téléphone ». *(2026-06-13)*
