@@ -61,4 +61,9 @@
 - Décennale / RC Pro stockées sur `profils` (pas de table assurances dédiée). *(2026-06-11)*
 - Financement = brique du **socle**, consommée par les modules, jamais enfermée dans le BTP. *(2026-06-11)*
 - UX universelle : 1 accueil / 1 menu, **vocabulaire adapté par métier** (anti-fuite BTP). *(2026-06-13)*
-- **L'IA est INVISIBLE à l'entrée** : à l'arrivée (landing ET app connectée), on ne met **jamais** l'IA en avant. Raison : une partie des utilisateurs ne comprend pas l'IA et **en a peur** → la mettre devant les fait fuir. On vend et on affiche le **RÉSULTAT** (devis conformes, se faire payer, être en règle, gagner du temps). L'IA se **découvre à l'usage** (« ah, ça fait ça tout seul »), une fois la confiance installée. Mots interdits en façade : « IA », « intelligence », « plateforme universelle », « agents » → remplacés par le bénéfice métier. *(2026-06-13)*
+- **Philosophie « Apple » — l'IA est le moteur invisible, le PRODUIT est ce qu'on voit** *(principe fondateur, vaut PARTOUT : landing ET toute l'app)* :
+  - L'IA n'est **jamais** l'objet qu'on manipule ni un argument de vente. C'est seulement **comment** ça marche, sous le capot.
+  - L'utilisateur voit et utilise un **PRODUIT réel qui respecte le réel** (son vrai métier, son vrai flux : devis, chantier, paiement, être en règle) — pas « une IA ».
+  - Comme l'iPhone : bourré d'IA, mais les gens utilisent juste *un outil qui marche*. Ils ne pensent pas « j'utilise une IA », ils pensent « ça marche / ça m'a fait gagner du temps ».
+  - Conséquence façade : bannir « IA », « intelligence », « plateforme universelle », « agents » → toujours le **bénéfice métier concret**. L'« effet IA » se **vit** à l'usage, il ne s'**annonce** pas.
+  - (Le « certains ont peur de l'IA » n'est qu'une conséquence parmi d'autres — la vraie raison est la philosophie produit : respecter le réel, l'IA reste invisible.) *(2026-06-13)*
