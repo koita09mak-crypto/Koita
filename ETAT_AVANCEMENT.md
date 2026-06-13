@@ -61,3 +61,4 @@
 - Décennale / RC Pro stockées sur `profils` (pas de table assurances dédiée). *(2026-06-11)*
 - Financement = brique du **socle**, consommée par les modules, jamais enfermée dans le BTP. *(2026-06-11)*
 - UX universelle : 1 accueil / 1 menu, **vocabulaire adapté par métier** (anti-fuite BTP). *(2026-06-13)*
+- **L'IA est INVISIBLE à l'entrée** : à l'arrivée (landing ET app connectée), on ne met **jamais** l'IA en avant. Raison : une partie des utilisateurs ne comprend pas l'IA et **en a peur** → la mettre devant les fait fuir. On vend et on affiche le **RÉSULTAT** (devis conformes, se faire payer, être en règle, gagner du temps). L'IA se **découvre à l'usage** (« ah, ça fait ça tout seul »), une fois la confiance installée. Mots interdits en façade : « IA », « intelligence », « plateforme universelle », « agents » → remplacés par le bénéfice métier. *(2026-06-13)*
