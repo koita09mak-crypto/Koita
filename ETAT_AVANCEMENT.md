@@ -38,9 +38,9 @@
   (artisan → « Nouveau devis » / « Devis · Chantiers · Équipe » ; ménage → « Nouvelle prestation » / « Prestations · Ménages · Équipe »),
   menu 5 entrées + « Tout AK » universel, **fin de la fuite BTP** (un profil non-BTP ne voit plus devis/chantier),
   mobile (BottomTabBar). Tests verts. *(PR #2 sur l'app `AK_Digital_BTP` — déploiement Vercel.)*
-- [ ] **Mode démo populé** — sentir l'app + amener le « aha » (cf. `RETENTION_ET_PRIX.md`)
-- [ ] **Refonte landing** — vendre le RÉSULTAT, pas l'IA
-- [ ] **Rôles / cockpit fondateur** — plan 5-points (cf. `PLAN_DE_CONCLUSION.md`, audit rôles)
+- [x] **Mode démo populé** ✅ (13/06) — bouton « Charger une démo », scénario par métier, réversible, fondateur protégé. 109/109 tests.
+- [x] **Refonte landing** ✅ (13/06) — vend le RÉSULTAT (IA invisible, tous métiers, multi-façade, CV en ligne). Section Prix branchée sur `plans.js` (Gratuit/Pro 29 €/Équipe 49 € + FCFA, annuel, fondateurs −30 %, essai 14j). 109/109 tests.
+- [ ] **Rôles / cockpit fondateur** — plan 5-points (cf. `PLAN_DE_CONCLUSION.md`, audit rôles) ← **prochain pass**
 - [ ] **La boucle (le wow)** — étape 2 : certif qui expire → formation financée (CPF) → certif ; étape 3 : travail → CV auto-rempli
 - [ ] **Passe de finition qualité 2026** (le gros prompt) : états, perf, cohérence sur toute l'app (cf. `PROMPT_FINITION_AK_UNIVERS.md`)
 - [ ] **PWA / mobile** : manifest + service worker → app installable Android/iPhone
