@@ -50,6 +50,7 @@
 - [ ] **Légal** : CGU / CGV / confidentialité / RGPD → valider par un juriste
 - [ ] **Bots / canaux** (Discord/Telegram/WhatsApp) — `replit_bot.py` comme base
 - [ ] **(Durcissement futur, post-lancement) Infra de test d'intégration RLS** — un Postgres de test qui rejoue chaque acteur (user/abonné/équipe/admin) pour garder la sécurité non-régressée à l'échelle. Pas requis pour lancer ; à cadrer plus tard.
+- [ ] **(Polish optionnel) Accessibilité des écrans `/app` connectés** — le 100 a11y est mesuré sur la landing publique ; une passe a11y dédiée sur les pages connectées + finir les loaders inline (Diaspora/Emploi). Non bloquant.
 
 ---
 
