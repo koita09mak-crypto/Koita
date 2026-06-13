@@ -44,3 +44,18 @@
 ## L'ordre conseillé
 **Bloc 1 (la boucle = le wow)** → **Bloc 2 (qualité + mobile)** → **Bloc 3 (config + légal)** → **Bloc 4 (lancer)**.
 > On finit le **wow** d'abord (ce qui rend l'app unique), puis on **polit**, puis on **branche les clés**, puis on **ouvre les portes**.
+
+---
+
+## 🔭 PÉRENNITÉ — angles morts FUTURS à anticiper *(réflexion fondateur Adama, 2026-06-13)*
+> Principe : **anticiper (noter + architecturer proprement), ne pas tout construire maintenant.** Bâtir pour aujourd'hui, laisser des accroches propres pour demain.
+
+| Angle mort futur | État | Action |
+|---|---|---|
+| **Rôles & permissions** (fondateur/admin vs user vs membre d'équipe) | à vérifier | mini-audit rôles (admin en dur ? /app/admin bloqué pour un user ? rôle équipe prêt ?) ← **le plus immédiat** |
+| **Sécurité/RGPD à l'échelle** | RLS solide ✅ | valider le légal (CGU/RGPD, couches B/C) par un juriste **avant de scaler** |
+| **Mises à jour sans casser les users** | discipline migrations ✅ | garder : migrations versionnées, tests, prouver avant push |
+| **Le wow à l'échelle** (nouveau user comprend en 3 s) | en cours (simplif + démo) | mode démo + onboarding par métier |
+| **Paiement réel à l'échelle** (échecs, remboursements, relances) | rails posés ✅ | gérer les cas limites au lancement |
+
+> ✅ Bonne nouvelle : la base est **architecturée pour grandir** (base propre, RLS, moteur universel, migrations disciplinées).
