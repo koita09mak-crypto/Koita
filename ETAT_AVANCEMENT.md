@@ -46,6 +46,7 @@
 - [ ] **PWA / mobile** : manifest + service worker → app installable Android/iPhone
 - [ ] **Squelettes des autres modules** (Services à domicile, Transport, Créateur) : entrée + « Bientôt disponible »
 - [ ] **Config des clés** : `.env.example` documenté (Supabase, Stripe, Wave, CinetPay, IA)
+- [ ] **Remise −30 % fondateurs — branchement paiement réel** (à faire en phase config paiement, AVANT lancement) : app-side ✅ (validation/tracking/plafond 100). Reste : ① créer un **coupon Stripe −30 % « forever »** + ② **diff `stripe-checkout`** (Edge Function : lire le code promo → appliquer le coupon, l'agent prépare et montre avant déploiement) + ③ Wave/CinetPay : −30 % au checkout.
 - [ ] **Légal** : CGU / CGV / confidentialité / RGPD → valider par un juriste
 - [ ] **Bots / canaux** (Discord/Telegram/WhatsApp) — `replit_bot.py` comme base
 
