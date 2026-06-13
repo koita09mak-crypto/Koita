@@ -43,12 +43,13 @@ On ne conçoit pas en « fonctionnalités ». On conçoit autour de **personnes 
 | La personne | Sa vraie vie / son problème | Modules AK Univers utilisés |
 |---|---|---|
 | **Adama / l'électricien** (France) | Chantiers, habilitations, devis, se faire payer | BTP · Finance · Formation · Diaspora |
-| **Fatou** (services à domicile) | Trouver des clients, facturer, être en règle | Services à domicile · Finance · Droit |
-| **Karim** (créateur / jeune actif) | Monétiser son savoir, se former, trouver un job | Créateur de contenu · Formation · Emploi |
-| **Le livreur** (Afrique) | Livraisons, tournées, gérer ses recettes | Transport & Logistique · Finance |
+| **Le boss BTP avec équipe** (~10 gars) | Gérer chantiers + équipe, appeler les gars, suivre clients | BTP · **Équipe** · Finance |
+| **L'organisatrice de voyages** (Oumra) | Organiser des voyages avec ses équipes : bilans, factures, **payes** | Voyage · **Équipe** · Finance · **Paie** |
+| **Le jardinier** | Ses prestations, ses clients, se faire payer, être en règle | Activité · Finance · Droit |
+| **La femme de ménage** | Trouver des clients, facturer, être en règle | Activité · Finance · Droit |
 | **Le Sénégalais de la diaspora** | Se former à distance, envoyer/recevoir de l'argent | Formation · Diaspora · Finance |
 
-> ⚠️ Personas **Fatou** et **Karim** à confirmer/affiner par Adama. Le reste est validé.
+> ✅ **Personas confirmés par Adama (2026-06-13, vrais profils observés).** Principe clé : **l'ENTRÉE est universelle** (tous arrivent par la même porte, trouvent leur besoin) ; **la QUALITÉ / la profondeur par métier fait la DIFFÉRENCE.** Nouveaux besoins révélés : **Équipe** (plusieurs personas), **Paie**, vertical **Voyage**.
 
 **Lecture clé :** presque tout le monde touche à **Finance** ; beaucoup touchent à **Formation** et **Diaspora**. Donc ces briques sont **communes** → elles vivent dans le NOYAU, pas dans un métier.
 
