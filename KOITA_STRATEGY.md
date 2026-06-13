@@ -133,7 +133,8 @@ AOF :
 | Appeler Pôle Emploi — ACRE | URGENTE | À faire |
 | Cartographier réseau AOF | HAUTE | À démarrer |
 | Créer profil LinkedIn pro | HAUTE | À faire |
-| Créer micro-entreprise sur l'activité **NUMÉRIQUE** d'abord (ACRE avant) | HAUTE | À faire — ne dépend plus de la qualif BTP |
+| Créer micro-entreprise sur l'activité **NUMÉRIQUE** d'abord (ACRE avant) | HAUTE | ✅ **DÉPOSÉE le 13/06** (entreprise individuelle, n° formalité J00250658754) |
+| **Déposer la demande d'ACRE à l'URSSAF** (dans les 45 j → avant ~28/07/2026) | URGENTE | À faire après réception SIRET |
 | Ajouter le BTP en 2e activité (diplôme La Solive OU 3 ans d'expérience) | MOYENNE | Plus tard |
 | SaaS BTP — module simplification (menu universel) | MOYENNE | Terminé (PR #2, tests verts, déploiement Vercel) |
 | SaaS BTP — définir le 1er client test réel | MOYENNE | À cadrer (éviter dispersion) |
@@ -178,6 +179,7 @@ AOF :
 - Création fichier ENTREPRISE_SETUP.md (configuration complète, checklist, modèle facture, tarifs)
 
 ### Session 3 — 2026-06-13 (soir)
+- **🏛️ MICRO-ENTREPRISE DÉPOSÉE** (guichet INPI) : entreprise individuelle, activité **numérique** (Services d'information / Traitement de données, hébergement), nom commercial **AK Univers**, adresse Paris 11e, **forme commerciale (BIC ~21 %)**, versement libératoire **Non** (non imposable). Frais greffe **7,63 €**. N° formalité J00250658754. → SIRET à venir par email. ⚠️ **ACRE à déposer à l'URSSAF sous 45 j (~28/07).**
 - **Axe digital — l'app SaaS BTP devient fonctionnelle de bout en bout.** Grosse session de finition + config.
 - **Code v1 bouclé** : simplification (menu universel par métier), mode démo, refonte landing + prix (3 paliers, IA invisible, multi-métiers, multi-façade), sécurité/cockpit fondateur (RLS, zéro fuite prouvé), qualité 2026 + PWA (app installable, Lighthouse 100, 18 écrans propres).
 - **Décisions produit actées** : IA invisible (philosophie Apple) · cible universelle (tous métiers, BTP = ancre/preuve) · multi-façade (web d'abord, PWA) · grille de prix (Pro 29 €/Équipe 49 €, FCFA pour l'AOF, 100 fondateurs −30 %).
