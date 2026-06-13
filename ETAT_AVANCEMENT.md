@@ -59,6 +59,15 @@
 
 ---
 
+## 🗣️ Retours Adama (post-test, 13/06 soir) — à traiter, DANS L'ORDRE
+> ⚠️ **Anti-dispersion (risque n°1)** : NE PAS ouvrir les autres domaines (créateur/formation/contenu). On finit le **pilote BTP** ; les autres restent « bientôt ». (Vision Apple : un produit excellent à la fois.)
+1. 🔴 **BUG DE CONNEXION** — Adama « n'arrive pas à se connecter » (à reproduire/diagnostiquer en priorité ; vérifier auth, confirmation email, session). **Critique.**
+2. 🟠 **Changer de profil / compte** — pas de switch de profil ; déconnexion→reconnexion à clarifier (référence Apple/iPhone/Windows). Cadrer le besoin exact (switch métier pour test ? multi-compte ?).
+3. 🟡 **« Pas assez de données » / app vide** — peupler le mode démo pour que ça respire.
+4. 🟢 **Traductions incomplètes** (FR/EN/WO/AR pas transversales) — polish, PLUS TARD (marché FR n'en a pas besoin pour lancer).
+
+---
+
 ## 🎯 Où on en est
 - Fondations + noyau = **✅ faits**
 - Pilote BTP = **✅ 5/5 COMPLET**
