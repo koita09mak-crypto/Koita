@@ -52,10 +52,22 @@
 
 | Angle mort futur | État | Action |
 |---|---|---|
-| **Rôles & permissions** (fondateur/admin vs user vs membre d'équipe) | à vérifier | mini-audit rôles (admin en dur ? /app/admin bloqué pour un user ? rôle équipe prêt ?) ← **le plus immédiat** |
-| **Sécurité/RGPD à l'échelle** | RLS solide ✅ | valider le légal (CGU/RGPD, couches B/C) par un juriste **avant de scaler** |
+| **Rôles & permissions** (fondateur/admin vs user vs membre d'équipe) | à vérifier | mini-audit rôles (admin en dur ? /app/admin bloqué pour un user ? rôle équipe prêt ?) ← **le plus immédiat** || **Sécurité/RGPD à l'échelle** | RLS solide ✅ | valider le légal (CGU/RGPD, couches B/C) par un juriste **avant de scaler** |
 | **Mises à jour sans casser les users** | discipline migrations ✅ | garder : migrations versionnées, tests, prouver avant push |
 | **Le wow à l'échelle** (nouveau user comprend en 3 s) | en cours (simplif + démo) | mode démo + onboarding par métier |
 | **Paiement réel à l'échelle** (échecs, remboursements, relances) | rails posés ✅ | gérer les cas limites au lancement |
 
 > ✅ Bonne nouvelle : la base est **architecturée pour grandir** (base propre, RLS, moteur universel, migrations disciplinées).
+
+### 🔐 Audit RÔLES (2026-06-13) + plan 5-points
+**Constat** : base solide + future-ready (flag `profils.is_admin`, fonction `is_ak_admin()`, **orgs + rôles équipe déjà prêts** = personas boss BTP / organisatrice). **3 fragilités** dans la couche du dessus :
+- email `koita09mak@gmail.com` **codé en dur** (front `isAdmin()` + 1 RLS user_analytics).
+- route `/app/admin` **juste cachée** (navigate client), pas verrouillée serveur.
+- **⚠️ Cockpit fondateur FAUX** : RLS ne laisse lire que SA ligne → « 1 inscrit, MRR 0 ». Pas de policy SELECT admin sur profils/subscriptions. *(Données protégées = pas de fuite, mais le cockpit ne voit pas la plateforme.)*
+
+**Plan 5-points (chacun prouvé, build vert) :**
+1. Front lit `profils.is_admin` (au lieu de l'email) → 1 source de vérité, multi-admin.
+2. RLS user_analytics : `is_ak_admin()` au lieu de l'email en dur.
+3. `RequireAdmin` sur `/app/admin*` (verrou serveur, pas juste redirect).
+4. **Cockpit : vue agrégée `SECURITY DEFINER` réservée `is_ak_admin()`** → répond au besoin « surveiller tous mes clients ». ⚠️ prouver qu'un user normal ne voit RIEN d'agrégé (pas de fuite).
+5. CHECK sur `membres_organisation.role` (valeurs valides).
