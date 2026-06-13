@@ -1,5 +1,5 @@
 # Mémoire Stratégique — Adama Koita
-> Dernière mise à jour : 2026-06-13 (soir — app SaaS BTP : paiement + IA fonctionnels en test)
+> Dernière mise à jour : 2026-06-13 (nuit — micro-entreprise DÉPOSÉE + app SaaS fonctionnelle, paiement + IA en test)
 > À mettre à jour après chaque session significative
 
 ---
@@ -9,7 +9,8 @@
 | Champ | Info |
 |-------|------|
 | Nom | Adama Koita |
-| Statut | Demandeur d'emploi |
+| Statut | Demandeur d'emploi (**plus de droit ARE** — épuisé) → **micro-entrepreneur** (micro **déposée le 13/06/2026**, SIRET en attente) |
+| Entreprise | Micro / entreprise individuelle · activité **numérique** (Services d'information / hébergement de données) · nom commercial **AK Univers** · domiciliée Paris 11e (Rue Oberkampf) · forme **commerciale (BIC ~21 %)** |
 | Budget départ | 200€ |
 | Formation en cours | Objectif La Solive (BTP) |
 | Expérience terrain | Électricité, télécoms, câblage, réseaux, bâtiment neuf, installations techniques, génie civil (bases) |
@@ -122,6 +123,9 @@ AOF :
 - [x] **Ordre d'immatriculation revu** : s'immatriculer **d'abord sur l'activité NUMÉRIQUE / SaaS** (non réglementée → **aucun diplôme requis** → débloque l'immatriculation tout de suite, sans attendre la qualif BTP). Le **BTP** (réglementé : **diplôme OU 3 ans d'expérience**) = **activité secondaire ajoutée plus tard**. *(2026-06-13)*
 - [x] **Entité AOF / sénégalaise = DÉFÉRÉE** : la micro FR **vend déjà** à la diaspora/AOF (abonnements SaaS + conseil/assistance à distance, facturés depuis la France). Structure locale **seulement plus tard**, si **présence physique** en AOF OU **encaissement mobile money local** (compte marchand). *(2026-06-13)*
 - [x] **Paiement séquencé par marché** : Stripe (France/Europe) **déjà fonctionnel** pour lancer ; **mobile money AOF (Wave/CinetPay) = phase 2 du paiement**, conditionné au compte marchand (donc à l'immatriculation). *(2026-06-13)*
+- [x] **Nom commercial à l'immatriculation : AK Univers** (la plateforme/app). « AK Réseaux & Bâtiment » reste l'identité **BTP**, à réutiliser quand le BTP sera ajouté en 2e activité. *(2026-06-13)*
+- [x] **Activité d'immatriculation = NUMÉRIQUE** (Services d'information / Traitement de données, hébergement → forme commerciale BIC). Le **NAF 4321A (BTP) n'est plus le principal** → deviendra l'activité secondaire. *(2026-06-13)*
+- [x] **Versement libératoire de l'impôt = NON** (Adama non imposable en l'état → éviter de payer un impôt non dû ; réversible chaque année). *(2026-06-13)*
 
 ---
 
@@ -130,7 +134,9 @@ AOF :
 | Action | Priorité | Statut |
 |--------|----------|--------|
 | Finir formation Objectif La Solive | URGENTE | En cours |
-| Appeler Pôle Emploi — ACRE | URGENTE | À faire |
+| **Recevoir le SIRET** (par email, qq jours) | HAUTE | En attente |
+| **Déposer ACRE à l'URSSAF** (≤ 45 j, avant ~28/07) — via espace autoentrepreneur.urssaf.fr + attestation demandeur d'emploi (France Travail) | URGENTE | Dès réception SIRET — Claude guidera |
+| Vérifier validité du justificatif de domiciliation envoyé (< 3 mois, à son nom, bonne adresse) | MOYENNE | À confirmer |
 | Cartographier réseau AOF | HAUTE | À démarrer |
 | Créer profil LinkedIn pro | HAUTE | À faire |
 | Créer micro-entreprise sur l'activité **NUMÉRIQUE** d'abord (ACRE avant) | HAUTE | ✅ **DÉPOSÉE le 13/06** (entreprise individuelle, n° formalité J00250658754) |
@@ -148,6 +154,12 @@ AOF :
 - Formation : Objectif La Solive ✓
 - Zone géographique : France + Afrique de l'Ouest ✓
 - Priorité stratégique : D (trois axes en parallèle) ✓
+- **Structure : UNE micro-entreprise FR multi-activités** (pas 3 entreprises) ✓ *(13/06)*
+- **Immatriculation : déposée le 13/06** sur l'activité **numérique** (entreprise individuelle, AK Univers) ✓
+- **Droit ARE : épuisé** (plus de droit) → donc pas d'ARE/ARCE à gérer ✓
+- **Imposable : non** → versement libératoire = Non ✓
+- **Domiciliation : Paris 11e** (Rue Oberkampf) ✓
+- **Diplôme BTP non requis** pour l'activité numérique (réglementation ne concerne que le BTP) ✓
 
 ---
 
@@ -162,6 +174,8 @@ AOF :
 - **BTP — voie « 3 ans d'expérience »** (élec/télécoms/câblage) : suffit-elle pour ajouter l'activité BTP sans diplôme ? → à confirmer **CMA / URSSAF / guichet INPI** (éviterait d'attendre La Solive).
 - **Mobile money AOF** : peut-on encaisser Wave/Orange Money **sans entité locale** (agrégateur cross-border type CinetPay/PayDunya), ou faut-il une structure sénégalaise ? → à vérifier.
 - **NAF d'immatriculation** : confirmer le code de l'activité numérique principale (ex. 6201Z programmation / 5829 édition logiciel / 6202A conseil) — le BTP 4321A devient secondaire.
+- **Justificatif de domiciliation** : le document envoyé au guichet est-il valide (daté < 3 mois, au nom d'Adama, même adresse que l'établissement) ? Type de document à confirmer (facture / quittance / attestation d'hébergement). Risque = demande de complément, pas refus définitif.
+- **Date de création de l'app / 1er client test réel** : qui sera le tout 1er abonné payant réel (hors Adama) ?
 
 ---
 
