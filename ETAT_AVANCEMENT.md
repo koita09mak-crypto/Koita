@@ -42,7 +42,7 @@
 - [x] **Refonte landing** ✅ (13/06) — vend le RÉSULTAT (IA invisible, tous métiers, multi-façade, CV en ligne). Section Prix branchée sur `plans.js` (Gratuit/Pro 29 €/Équipe 49 € + FCFA, annuel, fondateurs −30 %, essai 14j). 109/109 tests.
 - [x] **Rôles / cockpit fondateur** ✅ (13/06) — plan 5-points livré : admin via `is_admin` (fin de l'email en dur, gardé seulement comme contact/DPO) · RLS `user_analytics` via `is_ak_admin()` · `AdminGuard` serveur sur `/app/admin*` · cockpit `ak_cockpit_stats()` SECURITY DEFINER réservé admin (renvoie `null` aux non-admins) · CHECK sur `membres_organisation.role`. **Preuves base** : `cockpit_null_si_non_admin=true` · `policies_avec_email_en_dur=0` · **113/113 tests, build vert**. Migrations versionnées (5 points `e3e232b→a7dab92` + filet de parité rôles `c6a3fe6`). **Zéro fuite, zéro casse, réversible.**
 - [ ] **La boucle (le wow)** — étape 2 : certif qui expire → formation financée (CPF) → certif ; étape 3 : travail → CV auto-rempli
-- [ ] **Passe de finition qualité 2026** 🔄 (le gros prompt) : états, perf, cohérence sur toute l'app (cf. `PROMPT_FINITION_AK_UNIVERS.md`). Audit fait (« rien de cassé, pas de P0 ») → reste P2 états (ErrorRetry + skeletons sur Facturation/Finances), P3 cohérence, P4 polish.
+- [x] **Passe de finition qualité 2026** ✅ (13/06) — P2 états : skeleton + « Réessayer » sur **18 écrans** + bug chargement infini corrigé · P3 cohérence : audit honnête (déjà cohérent), 1 gain (Tâches → EmptyState) · **accessibilité 88 → 100** · Lighthouse **100 BP/SEO**. Build vert, 113/113 tests, COLORS réutilisé, zéro touche schéma/prix/sécurité.
 - [x] **PWA / mobile** ✅ (13/06) — manifest (description corrigée : sans IA/jargon) + icônes 192/512 maskable + service worker (ne casse jamais le live Supabase) → **app installable Android + iPhone**, build vert, 113/113 tests. (Preuve objective via audit Lighthouse PWA sur l'URL déployée.)
 - [ ] **Squelettes des autres modules** (Services à domicile, Transport, Créateur) : entrée + « Bientôt disponible »
 - [ ] **Config des clés** : `.env.example` documenté (Supabase, Stripe, Wave, CinetPay, IA)
@@ -56,7 +56,7 @@
 ## 🎯 Où on en est
 - Fondations + noyau = **✅ faits**
 - Pilote BTP = **✅ 5/5 COMPLET**
-- v1 lançable = **🔄 en cours** : **SIMPLIFICATION bouclée (13/06)** → prochaine étape : mode démo populé, puis finir la boucle (wow) + qualité/PWA → rendre l'app « payable ».
+- v1 lançable = **🔄 quasi prête** : simplification ✅ · mode démo ✅ · landing + prix ✅ · cockpit/sécurité ✅ · **qualité 2026 + PWA ✅** (installable, accessible 100, 18 écrans propres). **Le CODE de la v1 est essentiellement complet.** → Reste : **config (clés API) + légal (CGU/CGV/RGPD via juriste) → LANCER.**
 
 ## Décisions métier actées (rappel)
 - KPI fiscal = **ENCAISSÉ** (base URSSAF / plafond micro), pas le facturé. *(2026-06-11)*
