@@ -26,6 +26,7 @@ Tout sert **un seul but : faciliter** (l'esprit Apple « it just works »).
 > - Les « modules » ne sont PAS des produits séparés : ce sont des **métiers / familles de routines** branchés sur le **même** moteur.
 > - **Le BTP = le premier métier PROUVÉ**, pas « le produit ». On prouve le moteur sur le métier qu'Adama maîtrise, **puis on l'ouvre** à tous les profils (freelance, commerçant, créateur de contenu, logistique…). Prouver avant d'élargir.
 > - L'architecture porte **déjà** cette vision : l'onboarding capte le métier, et les agents sont un **moteur de règles universel** (pas du code propre au BTP).
+> - **Raffinement (2026-06-13)** : la **STRUCTURE** de l'accueil est universelle, mais le **VOCABULAIRE s'adapte au métier** (« Nouveau devis » → le terme du métier ; « à faire » parle la langue de l'utilisateur, pas du BTP). Et **PROACTIF** : l'app connaît le métier dès l'inscription → pré-adapte labels + actions **en avance**. Toujours tester la maquette avec un exemple **NON-BTP** (femme de ménage…).
 
 AK Univers est une plateforme propulsée par l'IA qui accompagne chaque personne dans sa vraie vie
 professionnelle — quel que soit son métier — en réunissant au même endroit le travail, l'argent,
