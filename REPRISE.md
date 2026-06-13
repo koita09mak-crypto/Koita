@@ -20,11 +20,14 @@
 - 👤 **Manque un menu de compte** (avatar → Mon compte / Abonnement / Déconnexion).
 - 🏠 **DEUX accueils** : l'onboarding mène à `/app/:portail/dashboard`, mais l'onglet « Accueil » mène à `/app` → « deux maisons » = la sensation « tout est mélangé ».
 
-### Plan validé — à exécuter DANS L'ORDRE (un à la fois, build vert + commit + capture) :
-1. **Corriger le panneau de notifications** (le « coupé »).
-2. **Ajouter le menu de compte sur l'avatar** (Mon compte · Abonnement · Déconnexion).
-3. **Ajouter l'interrupteur « Voir comme mon métier »** pour l'admin (pour qu'Adama teste la vraie vue BTP).
-4. **PUIS : unifier les 2 accueils** — ⚠️ décision à prendre avec Adama (quelle page devient LA maison unique). C'est le cœur du « pas structuré ».
+### Plan validé — ✅ FAIT (13/06 nuit, 6 commits poussés sur main de l'app) :
+1. ✅ **Panneau de notifications** corrigé (n'était plus coupé) — `0fd38d5`.
+2. ✅ **Menu de compte sur l'avatar** (Mon compte · Abonnement · Déconnexion) — `258bdd7`.
+3. ✅ **Interrupteur « Voir comme mon métier »** pour l'admin — `45047a5`.
+4. ✅ **Unification des accueils → UNE seule maison `/app`** (+ rangement de l'île portail, routes `/app/:portail/*` → app unifiée) — `8146cee`, `18c3940`. → **Le « tout est mélangé » est réglé.**
+
+**À FAIRE (vérification) :** recharger l'app après déploiement Vercel → vérifier les 3 redirections + qu'onboarding ET onglet « Accueil » mènent à la même page `/app`.
+**Suite possible (audit débutant) :** affiner connexion/déconnexion, traductions (plus tard), peupler les données démo.
 
 ---
 
