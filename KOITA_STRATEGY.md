@@ -206,7 +206,9 @@ AOF :
 - 🎨 **Nouveau cap produit : REFONTE DESIGN & STRUCTURE.** Demande d'Adama : l'app ressemble encore à « un menu + des tableaux » → la hisser au rang de **VRAIE app** (ressenti **Apple / Netflix / Amazon**), **structurée par univers cohérents** (regrouper ce qui va ensemble, ex. « Activité ») et **vivante/dynamique**.
 - 📄 **Livré : `PROMPT_REFONTE_DESIGN.md`** — prompt à coller dans la session app `AK_Digital_BTP` (même format : Phase 0 audit d'architecture → STOP, zéro casse, réutilise COLORS/composants, anti-dispersion).
 - **3 chantiers dans l'ordre** : ① ossature (1 maison unique = fusion des 2 accueils + regroupement par univers + nav cohérente) → ② hiérarchie visuelle (héros + rangées type Netflix) → ③ mouvement/polish (transitions, cascade, micro-interactions ; perf préservée, `prefers-reduced-motion`).
-- ⚠️ **Décisions en attente d'Adama** : quelle page devient LA maison unique, et quels écrans regroupés sous quels univers.
+- **Précisions Adama (14/06)** — 3 exigences ajoutées au prompt : ① **GUICHET UNIQUE** = une seule porte d'entrée stricte d'où tout part, qui accueille aussi les autres domaines (cohérent « une seule entité multi-activités ») · ② **l'app s'explique toute seule** = un nouvel utilisateur comprend en < 10 s le but / la 1re action / la valeur (le « pas structuré » = surtout un manque de SENS) · ③ **l'app se vend toute seule** = valeur lisible partout, pas que la landing (niveau Apple/Amazon).
+- **Méthode validée** : étape par étape, l'architecture se définit en Phase 0 (Adama laisse l'agent proposer d'abord, puis valide). Accepte que ça coûte des tokens/agents si le résultat est une VRAIE app structurée.
+- ⚠️ **Décisions à valider en Phase 0 avec Adama** : quelle page devient LA maison unique (= le guichet unique), et quels écrans regroupés sous quels univers.
 
 ### Session 2 — 2026-06-13
 - Point d'avancement sur l'**axe digital** (axe 3 du plan) : développement d'une app **SaaS BTP** (`AK_Digital_BTP` / `06_SaaS_BTP`)

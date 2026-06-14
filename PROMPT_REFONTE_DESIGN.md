@@ -22,6 +22,7 @@ Traduction produit — 3 manques concrets :
 1. **Structure plate** : tout est au même niveau, rien n'est *regroupé par univers cohérent* (ex. une zone « Activité » qui réunit ce qui va ensemble). → manque une **architecture d'information** lisible.
 2. **Deux maisons** : l'onboarding mène à `/app/:portail/dashboard`, l'onglet « Accueil » mène à `/app` → sensation « tout est mélangé, où est la maison ? ». ⚠️ **C'est LE cœur du « pas structuré ».**
 3. **Statique** : aucune **vie** (pas de hiérarchie visuelle forte, pas de mouvement, pas de mise en avant). Une app moderne *respire et réagit*.
+4. **Ça ne s'explique pas** : un nouvel utilisateur n'a aucun moment où il comprend **à quoi sert l'app, quoi faire en premier, ce que ça lui apporte**. Il arrive et il est perdu. → manque la **clarté du sens** (l'app doit s'expliquer ET se vendre toute seule, pas que la landing).
 
 ## 2. Les 3 références, traduites en principes CODABLES (pas du copier-coller)
 - **Apple** → *clarté & retenue* : une hiérarchie nette (1 titre, 1 action principale), beaucoup d'air, mouvement **discret et constant** (transitions douces, feedback < 100 ms), jamais de gadget. « Ça marche, c'est calme, c'est beau. »
@@ -33,6 +34,8 @@ A. **UNE maison unique** (résoudre les 2 accueils) : un **Accueil** = tableau d
 B. **Architecture d'information regroupée** : les écrans existants rangés sous **quelques univers cohérents** (« espaces »), pas une liste plate. (Ex. de regroupement à valider en Phase 0 : **Activité** = terrain/chantiers/planning · **Argent** = devis/factures/dépenses/rentabilité · **Évoluer** = compétences/avenir/CV · **Tout AK** = le reste.) ⚠️ **Les regroupements exacts = à valider avec moi.**
 C. **Vie & dynamisme** (sobre, perf) : transitions de page douces, apparition en cascade des cartes au montage, micro-interactions au tap (≤ 150 ms), états animés (skeleton → contenu), header qui réagit au scroll. **Jamais au prix de la perf** (premier rendu utile < 2 s, 60 fps, `prefers-reduced-motion` respecté).
 D. **Cohérence totale** : même composant = même apparence PARTOUT ; un seul système (COLORS, espacements, rayons, typo, ombres) ; navigation identique web & mobile (BottomTabBar mobile, sidebar desktop).
+E. **GUICHET UNIQUE** (exigence n°1 d'Adama — la rigueur) : AK Univers = **UNE seule porte d'entrée stricte et cohérente** d'où **tout** part. Les autres métiers/domaines sont **accessibles depuis ce guichet unique** (cohérent avec « une seule entité multi-activités »), **montrés** (visibles) mais **jamais vendus comme finis** : BTP = pilote réel, les autres = « bientôt ». Pas deux portes, pas deux logiques — une seule, stricte.
+F. **L'APP S'EXPLIQUE ET SE VEND TOUTE SEULE** : en quelques secondes, un nouvel utilisateur comprend **à quoi ça sert, quoi faire en premier (1 action évidente), ce que ça lui apporte**. Le sens/la valeur est **lisible partout dans l'app**, pas seulement sur la landing (premier lancement guidé, états vides qui pointent le but, libellés qui parlent bénéfice). Niveau Apple/Amazon : l'utilisateur n'a **pas besoin qu'on lui explique** — c'est évident.
 
 ## 4. Méthode obligatoire (pas de big-bang)
 - **PHASE 0 — AUDIT D'ARCHITECTURE, puis STOP.** Deux livrables :
@@ -42,7 +45,8 @@ D. **Cohérence totale** : même composant = même apparence PARTOUT ; un seul s
 - **UNE étape à la fois** : build vert + commit dédié + tu me dis quel écran/URL je peux tester. Jamais « c'est bon » sans le tableau « existe / manque » prouvé dans le code réel.
 
 ## 5. Definition of Done — standard « vraie app 2026 » (chaque étape coche TOUT)
-- **Structure** : une seule maison ; chaque écran rangé sous un univers clair ; navigation identique partout ; zéro lien mort après le regroupement.
+- **Structure** : une seule maison / **un guichet unique** ; chaque écran rangé sous un univers clair ; navigation identique partout ; zéro lien mort après le regroupement.
+- **Compréhension immédiate** : un nouvel utilisateur comprend en < 10 s le but + sa 1re action ; la valeur est lisible dans l'app (pas que la landing) ; les autres domaines sont visibles mais marqués « bientôt » (pas vendus comme finis).
 - **Hiérarchie** : sur chaque page, 1 chose dominante (héros / action principale), le reste en sections scannables ; pas de mur plat.
 - **Vie** : transitions de page + cascade au montage + feedback tap < 100 ms ; `prefers-reduced-motion` honoré ; **0 régression de perf** (< 2 s, pas de saccade).
 - **Mobile-first** : tout au pouce, cibles ≥ 44 px, pas de scroll horizontal, safe-areas, BottomTabBar cohérente.
