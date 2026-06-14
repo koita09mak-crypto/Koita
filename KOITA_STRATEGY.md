@@ -1,5 +1,5 @@
 # Mémoire Stratégique — Adama Koita
-> Dernière mise à jour : 2026-06-13 (nuit — micro-entreprise DÉPOSÉE + app SaaS fonctionnelle, paiement + IA en test)
+> Dernière mise à jour : 2026-06-14 (menu de compte livré + cap REFONTE DESIGN — prompt `PROMPT_REFONTE_DESIGN.md`)
 > À mettre à jour après chaque session significative
 
 ---
@@ -200,6 +200,13 @@ AOF :
 - **Config live (mode test) faite par Adama, guidée pas à pas** : clé IA Anthropic posée → IA réelle marche ; Stripe (produits, secrets, webhook) → **paiement test réussi → abonnement Pro activé** automatiquement. Un vrai piège d'API Stripe debuggé (current_period sur items + idempotence).
 - **Reste (non bloquant)** : nettoyage Stripe (webhook dupliqué), durcir idempotence, Wave/CinetPay, passage en live + remise fondateurs, légal (CGU/CGV/RGPD par juriste), domaine.
 - **Rappel** : la priorité Phase 1 terrain (RDV Pôle Emploi / ACRE, immatriculation) reste ouverte en parallèle.
+
+### Session 4 — 2026-06-14
+- ✅ **Menu de compte livré** : l'avatar ouvre **Mon compte · Abonnement · Déconnexion** (confirmé par captures d'Adama). → règle le retour #2 (changer de profil / se déconnecter).
+- 🎨 **Nouveau cap produit : REFONTE DESIGN & STRUCTURE.** Demande d'Adama : l'app ressemble encore à « un menu + des tableaux » → la hisser au rang de **VRAIE app** (ressenti **Apple / Netflix / Amazon**), **structurée par univers cohérents** (regrouper ce qui va ensemble, ex. « Activité ») et **vivante/dynamique**.
+- 📄 **Livré : `PROMPT_REFONTE_DESIGN.md`** — prompt à coller dans la session app `AK_Digital_BTP` (même format : Phase 0 audit d'architecture → STOP, zéro casse, réutilise COLORS/composants, anti-dispersion).
+- **3 chantiers dans l'ordre** : ① ossature (1 maison unique = fusion des 2 accueils + regroupement par univers + nav cohérente) → ② hiérarchie visuelle (héros + rangées type Netflix) → ③ mouvement/polish (transitions, cascade, micro-interactions ; perf préservée, `prefers-reduced-motion`).
+- ⚠️ **Décisions en attente d'Adama** : quelle page devient LA maison unique, et quels écrans regroupés sous quels univers.
 
 ### Session 2 — 2026-06-13
 - Point d'avancement sur l'**axe digital** (axe 3 du plan) : développement d'une app **SaaS BTP** (`AK_Digital_BTP` / `06_SaaS_BTP`)
