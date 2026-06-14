@@ -1,4 +1,4 @@
-# 🔄 REPRISE — Par où on reprend (snapshot 2026-06-13, nuit)
+# 🔄 REPRISE — Par où on reprend (snapshot 2026-06-14)
 
 > **À lire en PRIORITÉ en début de session**, avec `KOITA_STRATEGY.md`.
 > Ce repo `Koita` = mémoire/stratégie. L'app vit dans le repo **`AK_Digital_BTP`** (séparé).
@@ -17,14 +17,20 @@
 ### Audit Phase 0 fait par l'agent — findings clés :
 - ✅ **Le « + Publier un article » n'est PAS un bug** : il n'apparaît que pour un compte **ADMIN** (le compte fondateur d'Adama). Un **vrai artisan voit « + Nouveau devis »**. → **L'universel marche.**
 - 🔔 **Bug CSS** : panneau notifications (340px) déborde de la sidebar (260px) → coupé à gauche.
-- 👤 **Manque un menu de compte** (avatar → Mon compte / Abonnement / Déconnexion).
-- 🏠 **DEUX accueils** : l'onboarding mène à `/app/:portail/dashboard`, mais l'onglet « Accueil » mène à `/app` → « deux maisons » = la sensation « tout est mélangé ».
+- ✅ **Menu de compte livré** (avatar → Mon compte / Abonnement / Déconnexion) — confirmé par captures d'Adama (14/06). Déconnexion / changement de compte OK.
+- 🏠 **DEUX accueils** : l'onboarding mène à `/app/:portail/dashboard`, mais l'onglet « Accueil » mène à `/app` → « deux maisons » = la sensation « tout est mélangé ». **→ devient le cœur de la refonte design.**
 
 ### Plan validé — à exécuter DANS L'ORDRE (un à la fois, build vert + commit + capture) :
 1. **Corriger le panneau de notifications** (le « coupé »).
-2. **Ajouter le menu de compte sur l'avatar** (Mon compte · Abonnement · Déconnexion).
+2. ✅ **Menu de compte sur l'avatar** (Mon compte · Abonnement · Déconnexion) — **FAIT (14/06)**.
 3. **Ajouter l'interrupteur « Voir comme mon métier »** pour l'admin (pour qu'Adama teste la vraie vue BTP).
 4. **PUIS : unifier les 2 accueils** — ⚠️ décision à prendre avec Adama (quelle page devient LA maison unique). C'est le cœur du « pas structuré ».
+
+### 🎨 NOUVEAU CAP — REFONTE DESIGN & STRUCTURE (demandé par Adama, 14/06)
+> Objectif : que l'app ne ressemble plus à « un menu + des tableaux » mais à une **VRAIE app** (ressenti Apple / Netflix / Amazon) — **structurée par univers cohérents** (regrouper ce qui va ensemble, ex. « Activité »), **vivante et dynamique**.
+- **Prompt prêt à coller** dans la session app : **`PROMPT_REFONTE_DESIGN.md`** (même format que les autres prompts : Phase 0 audit d'architecture → STOP).
+- 3 chantiers, dans l'ordre : ① **ossature** (1 maison unique = fusion des 2 accueils + regroupement par univers + nav cohérente) → ② **hiérarchie visuelle** (héros + rangées type Netflix) → ③ **mouvement/polish** (transitions, cascade, micro-interactions, sans casser la perf).
+- ⚠️ **Décisions qui attendent Adama** : quelle page devient LA maison unique, et quels écrans regroupés sous quels univers.
 
 ---
 
