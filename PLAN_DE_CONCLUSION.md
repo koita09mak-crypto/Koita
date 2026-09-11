@@ -8,7 +8,7 @@
 
 ## 🧭 ORDRE D'EXÉCUTION ACTUALISÉ (13/06) — UN à la fois, prouvé
 1. **SIMPLIFICATION** ✅ **FAIT (2026-06-13)** — accueil 1 focus + **vocabulaire par métier** (« Nouvelle prestation », empty « premier ménage »), menu 5 entrées + « Tout AK » universel (**fin de la fuite BTP** — Fatou ne voit plus devis/chantier), mobile (BottomTabBar), 99/99 tests. *(étape 4 DRY = non-critique, risque double-lecture DB → séparée/déférée, à prouver.)*
-2. **MODE DÉMO populé** — sentir l'app + amener le « aha » (cf. `RETENTION_ET_PRIX.md`).
+2. **MODE DÉMO** ✅ **FAIT (2026-06-13)** — boutons Charger/Vider, scénario **adapté au métier** (BTP vs ménage), réversible, flag `is_demo` → **n'affecte pas les stats fondateur**, 109/109 tests. → charger la démo pour sentir l'app vivante + démo prospects.
 3. **REFONTE LANDING** — vendre le RÉSULTAT pas l'IA (cf. décision positionnement).
 4. **RÔLES / cockpit fondateur** — les 5 points (cf. audit rôles ci-dessous).
 5. **Qualité + PWA** (mobile installable).
